@@ -1,0 +1,257 @@
+# 밥때 손님 설정. 확률·단골 레벨·품종 목록은 이 파일에서만 바꾼다.
+
+# 희귀도별 출현 가중치 (D-1). 희귀도를 먼저 뽑고, 그 희귀도의 품종 중에서 균등하게 뽑는다.
+[rarity_weights]
+common = 70
+rare = 25
+legendary = 5
+
+[rarity_labels]
+common = "일반"
+rare = "희귀"
+legendary = "전설"
+
+# 단골 레벨 (D-4). 만난 횟수가 min_count 이상이면 그 레벨.
+[[loyalty_levels]]
+level = 1
+min_count = 1
+title = "첫 만남"
+
+[[loyalty_levels]]
+level = 2
+min_count = 3
+title = "아는 사이"
+
+[[loyalty_levels]]
+level = 3
+min_count = 7
+title = "단골"
+
+[[loyalty_levels]]
+level = 4
+min_count = 15
+title = "찐단골"
+
+# 품종 마스터 데이터 (MVP 20종: 개 10 + 고양이 10). PRD 13장 확률표가 확정되면 갱신한다.
+# photo: 강아지는 Dog CEO 품종 경로, 고양이는 TheCatAPI 사진 id (둘 다 키 없이 호출).
+# fur·accent·ear는 사진을 못 불러올 때와 못 만난 품종 실루엣에 쓰는 SVG 그림 색과 귀 모양이다.
+
+[[breeds]]
+id = "dog_maltese"
+photo = "maltese"
+species = "dog"
+name = "몰티즈"
+rarity = "common"
+description = "하얀 솜뭉치. 밥그릇 소리만 들려도 제일 먼저 달려온다."
+fur = "#ffffff"
+accent = "#f6d6de"
+ear = "down"
+
+[[breeds]]
+id = "dog_poodle"
+photo = "poodle/toy"
+species = "dog"
+name = "토이 푸들"
+rarity = "common"
+description = "곱슬곱슬한 털이 자랑. 식사 예절이 아주 바르다."
+fur = "#c98b5a"
+accent = "#a86d40"
+ear = "down"
+
+[[breeds]]
+id = "dog_pomeranian"
+photo = "pomeranian"
+species = "dog"
+name = "포메라니안"
+rarity = "common"
+description = "작은 몸에 큰 목소리. 밥 먹기 전에 꼭 한 바퀴 돈다."
+fur = "#f2b366"
+accent = "#fbe3c0"
+ear = "up"
+
+[[breeds]]
+id = "dog_shiba"
+photo = "shiba"
+species = "dog"
+name = "시바견"
+rarity = "common"
+description = "새침한 얼굴로 와서 반찬을 슬쩍 쳐다본다."
+fur = "#e39a4f"
+accent = "#fff4e4"
+ear = "up"
+
+[[breeds]]
+id = "dog_chihuahua"
+photo = "chihuahua"
+species = "dog"
+name = "치와와"
+rarity = "common"
+description = "작지만 용감한 손님. 자기 밥그릇은 꼭 지킨다."
+fur = "#f1d3a8"
+accent = "#fbeedd"
+ear = "up"
+
+[[breeds]]
+id = "dog_golden"
+photo = "retriever/golden"
+species = "dog"
+name = "골든 리트리버"
+rarity = "common"
+description = "누구와도 밥을 나눠 먹는 다정한 손님."
+fur = "#e8b860"
+accent = "#f6dca6"
+ear = "down"
+
+[[breeds]]
+id = "dog_corgi"
+photo = "pembroke"
+species = "dog"
+name = "웰시코기"
+rarity = "rare"
+description = "짧은 다리로 부지런히 걸어와 엉덩이를 흔든다."
+fur = "#e9a25c"
+accent = "#ffffff"
+ear = "up"
+
+[[breeds]]
+id = "dog_bichon"
+photo = "frise/bichon"
+species = "dog"
+name = "비숑 프리제"
+rarity = "rare"
+description = "구름 같은 머리를 하고 디저트를 기다린다."
+fur = "#fbf8f2"
+accent = "#efe4d4"
+ear = "down"
+
+[[breeds]]
+id = "dog_samoyed"
+photo = "samoyed"
+species = "dog"
+name = "사모예드"
+rarity = "rare"
+description = "늘 웃는 얼굴. 같이 먹으면 밥이 더 맛있어진다."
+fur = "#ffffff"
+accent = "#eef1f6"
+ear = "up"
+
+[[breeds]]
+id = "dog_bordercollie"
+photo = "collie/border"
+species = "dog"
+name = "보더 콜리"
+rarity = "legendary"
+description = "끼니 시간을 정확히 아는 똑똑한 손님. 좀처럼 보기 힘들다."
+fur = "#3a3434"
+accent = "#ffffff"
+ear = "up"
+
+[[breeds]]
+id = "cat_americanshort"
+photo = "JFPROfGtQ"
+species = "cat"
+name = "아메리칸 숏헤어"
+rarity = "common"
+description = "줄무늬 털의 씩씩한 손님. 아무 반찬이나 잘 먹는다."
+fur = "#d9a05b"
+accent = "#f4d6a8"
+ear = "up"
+
+[[breeds]]
+id = "cat_abyssinian"
+photo = "0XYvRd7oD"
+species = "cat"
+name = "아비시니안"
+rarity = "common"
+description = "호기심 대장. 식탁 위 모든 그릇을 한 번씩 들여다본다."
+fur = "#c98a55"
+accent = "#e8c39b"
+ear = "up"
+
+[[breeds]]
+id = "cat_britishshort"
+photo = "s4wQfYoEk"
+species = "cat"
+name = "브리티시 숏헤어"
+rarity = "common"
+description = "동그란 얼굴로 느긋하게 식사를 즐긴다."
+fur = "#a3a9b3"
+accent = "#c7ccd3"
+ear = "up"
+
+[[breeds]]
+id = "cat_norwegian"
+photo = "06dgGmEOV"
+species = "cat"
+name = "노르웨이 숲"
+rarity = "common"
+description = "풍성한 털옷을 입고 숲에서 내려온 손님."
+fur = "#b89c80"
+accent = "#efe2d2"
+ear = "up"
+
+[[breeds]]
+id = "cat_siamese"
+photo = "ai6Jps4sx"
+species = "cat"
+name = "샴"
+rarity = "common"
+description = "수다쟁이 손님. 오늘 메뉴에 대해 할 말이 많다."
+fur = "#f1e4cf"
+accent = "#5a4235"
+ear = "up"
+
+[[breeds]]
+id = "cat_persian"
+photo = "-Zfz5z2jK"
+species = "cat"
+name = "페르시안"
+rarity = "rare"
+description = "우아하게 앉아서 한 입씩 천천히 먹는다."
+fur = "#f7efe6"
+accent = "#e6d6c4"
+ear = "up"
+
+[[breeds]]
+id = "cat_munchkin"
+photo = "j5cVSqLer"
+species = "cat"
+name = "먼치킨"
+rarity = "rare"
+description = "짧은 다리로 식탁에 오르려고 애쓰는 중."
+fur = "#c8a27a"
+accent = "#ead6bd"
+ear = "up"
+
+[[breeds]]
+id = "cat_ragdoll"
+photo = "oGefY4YoG"
+species = "cat"
+name = "랙돌"
+rarity = "rare"
+description = "안기면 축 늘어지는 순둥이. 파란 눈이 예쁘다."
+fur = "#f4ece2"
+accent = "#7a6a5e"
+ear = "up"
+
+[[breeds]]
+id = "cat_mainecoon"
+photo = "OOD3VXAQn"
+species = "cat"
+name = "메인쿤"
+rarity = "rare"
+description = "커다란 덩치의 신사. 꼬리로 식탁을 쓸고 다닌다."
+fur = "#8a6a4a"
+accent = "#c9ab88"
+ear = "up"
+
+[[breeds]]
+id = "cat_sphynx"
+photo = "BDb8ZXb1v"
+species = "cat"
+name = "스핑크스"
+rarity = "legendary"
+description = "따뜻한 밥 냄새를 좋아하는 신비로운 손님."
+fur = "#f0c9b3"
+accent = "#e3a993"
+ear = "up"
