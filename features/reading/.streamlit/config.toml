@@ -1,0 +1,11 @@
+# 독서 챌린지 단독 실행용 테마 (PRD 8장 Visual Direction). features/reading 폴더에서 streamlit run 할 때 적용된다.
+# 병합 시에는 shared/ 디자인 토큰이 대신한다. 글꼴은 reading.py의 THEME_CSS에서 불러온다.
+# 독서의 포인트 컬러는 라벤더 퍼플(primaryColor). 글자·배경 대비는 모두 4.5:1 이상.
+[theme]
+primaryColor = "#7A56B0"
+backgroundColor = "#FFF8F0"
+secondaryBackgroundColor = "#F6EEFB"
+textColor = "#3B2F3F"
+borderColor = "#E2D2EE"
+baseRadius = "20px"
+buttonRadius = "20px"
