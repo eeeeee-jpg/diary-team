@@ -1,0 +1,3 @@
+# 비밀 값 (커밋 금지)
+.streamlit/secrets.toml
+.env
