@@ -11,6 +11,7 @@ from features.guest.config import BREEDS
 from features.guest.logic import (
     apply_visit,
     build_summary,
+    clean_menu,
     compute_streak,
     day_count,
     loyalty_of,
@@ -97,6 +98,14 @@ class SummaryTest(unittest.TestCase):
             {"title": "밥때 손님", "value": "오늘 손님 2/3 · 도감 5/20", "status": "in_progress"},
         )
         self.assertEqual(build_summary(3, 5, 20)["status"], "done")
+
+
+class MenuTest(unittest.TestCase):
+    def test_clean_menu(self):
+        self.assertIsNone(clean_menu(None))
+        self.assertIsNone(clean_menu("   \n "))
+        self.assertEqual(clean_menu("  김치찌개,\n 계란말이 "), "김치찌개, 계란말이")
+        self.assertEqual(len(clean_menu("가" * 50)), 30)
 
 
 if __name__ == "__main__":

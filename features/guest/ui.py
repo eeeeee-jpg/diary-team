@@ -26,15 +26,16 @@ def render() -> None:
     today = today_kst()
 
     streak, best = compute_streak(visits, today)
-    _html(diary.header(
-        today, day_count(visits, today), streak, best, recent_days(visits, today), len(collection), len(BREEDS)
-    ))
-
-    today_tab, album_tab = st.tabs(["📔 오늘의 일기", "📒 카드 앨범"])
-    with today_tab:
-        _today(visits, collection)
-    with album_tab:
-        _album(collection)
+    # 일기장 첫 장과 탭을 노트 한 권(.st-key-guest_book, diary.CSS)에 담는다.
+    with st.container(key="guest_book"):
+        _html(diary.header(
+            today, day_count(visits, today), streak, best, recent_days(visits, today), len(collection), len(BREEDS)
+        ))
+        today_tab, album_tab = st.tabs(["📔 오늘의 일기", "📒 카드 앨범"])
+        with today_tab:
+            _today(visits, collection)
+        with album_tab:
+            _album(collection)
 
 
 def _today(visits: list[GuestVisit], collection: dict[str, CollectionCard]) -> None:
@@ -44,7 +45,7 @@ def _today(visits: list[GuestVisit], collection: dict[str, CollectionCard]) -> N
 
     today = today_kst().isoformat()
     slots = {
-        v.slot: (BREED_BY_ID[v.breed_id], v.image_url, v.meal_photo)
+        v.slot: (BREED_BY_ID[v.breed_id], v.image_url, v.meal_photo, v.menu)
         for v in visits
         if v.date == today and v.seen
     }
@@ -52,16 +53,18 @@ def _today(visits: list[GuestVisit], collection: dict[str, CollectionCard]) -> N
 
 
 def _arrival(visit: GuestVisit, card: CollectionCard) -> None:
-    """손님 방문 일기: 카드가 뒤집히며 나오고, 버튼을 누르면 앨범에 붙는다."""
+    """손님 방문 일기: 손님이 다가오고 카드가 뿅 나온 뒤, 같은 칸 아래 버튼을 누르면 앨범에 붙는다."""
     breed = BREED_BY_ID[visit.breed_id]
     is_new = card.first_met_at == visit.visited_at
     card_html = cards.card(breed, card, image_url=visit.image_url, is_new=is_new)
-    _html(diary.arrival(
-        visit.slot, breed, card_html, visit.meal_photo, is_new, loyalty_of(card.met_count), photo_ok=bool(visit.image_url)
-    ))
-    if st.button("📒 카드 앨범에 붙이기", key=f"guest_seen_{visit.id}", type="primary", use_container_width=True):
-        storage.mark_seen(visit.id)
-        st.rerun()
+    with st.container(key=f"guest_arrival_{visit.id}", horizontal_alignment="center"):
+        _html(diary.arrival(
+            visit.id, visit.slot, breed, card_html, visit.meal_photo, visit.menu, is_new, loyalty_of(card.met_count),
+            photo_ok=bool(visit.image_url),
+        ))
+        if st.button("📒 카드 앨범에 붙이기", key=f"guest_seen_{visit.id}", type="primary"):
+            storage.mark_seen(visit.id)
+            st.rerun()
 
 
 def _album(collection: dict[str, CollectionCard]) -> None:

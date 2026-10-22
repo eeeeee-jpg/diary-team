@@ -130,3 +130,14 @@ def build_summary(visits_today: int, collected: int, total_breeds: int) -> Today
         "value": f"오늘 손님 {visits_today}/{len(SLOTS)} · 도감 {collected}/{total_breeds}",
         "status": status,
     }
+
+
+MENU_MAX_LEN = 30  # 폴라로이드 한 줄에 들어가는 길이
+
+
+def clean_menu(text: str | None) -> str | None:
+    """먹은 메뉴 글: 공백·줄바꿈을 한 칸으로 줄이고 MENU_MAX_LEN자까지만. 비어 있으면 None."""
+    if not text:
+        return None
+    cleaned = " ".join(text.split())[:MENU_MAX_LEN]
+    return cleaned or None

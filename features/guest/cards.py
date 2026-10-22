@@ -186,7 +186,7 @@ CSS = """
 .guest-reveal { max-width:270px; margin:0 auto; perspective:1000px; }
 .guest-flip { animation:guest-flip .8s cubic-bezier(.2,.8,.2,1) both; }
 
-@keyframes guest-flip { from { transform:rotateY(90deg) scale(.9); opacity:.2; } to { transform:none; opacity:1; } }
+@keyframes guest-flip { from { transform:rotateY(90deg) scale(.9); opacity:0; } to { transform:none; opacity:1; } }
 @keyframes guest-shine { to { transform:translateX(120%); } }
 @keyframes guest-twinkle { from { transform:scale(.75) rotate(0deg); opacity:.6; } to { transform:scale(1.15) rotate(45deg); opacity:1; } }
 @media (prefers-reduced-motion: reduce) {

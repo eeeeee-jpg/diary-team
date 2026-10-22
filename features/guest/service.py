@@ -11,7 +11,7 @@ from . import storage
 from .clients.photos import fetch_photo
 from .config import BREEDS
 from .events import pending_meal_events
-from .logic import apply_visit, build_summary, now_kst, pick_breed, today_kst
+from .logic import apply_visit, build_summary, clean_menu, now_kst, pick_breed, today_kst
 from .meal_photo import shrink
 from .models import GuestVisit, MealLoggedEvent, TodaySummary
 
@@ -40,6 +40,7 @@ def handle_meal_logged(event: MealLoggedEvent) -> GuestVisit | None:
         visited_at=now_kst().isoformat(timespec="seconds"),
         image_url=fetch_photo(breed),  # 실패하면 None → 화면에서 SVG 일러스트로 대신
         meal_photo=shrink(event.get("photo")),
+        menu=clean_menu(event.get("menu")),
     )
     result: dict[str, bool] = {}
 

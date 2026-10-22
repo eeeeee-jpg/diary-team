@@ -32,6 +32,7 @@ class MealLoggedEvent(TypedDict):
     slot: Slot
     date: str  # YYYY-MM-DD
     photo: NotRequired[bytes | None]  # 밥상 사진 원본 (선택). 팀원 A에게 추가 요청할 필드
+    menu: NotRequired[str | None]  # 먹은 메뉴 글 (선택). 팀원 A에게 추가 요청할 필드
 
 
 @dataclass
@@ -47,6 +48,7 @@ class GuestVisit:
     seen: bool = False  # 방문 연출을 사용자가 확인했는지
     image_url: str | None = None  # 이번에 찾아온 손님 사진. 불러오지 못하면 None
     meal_photo: bytes | None = None  # 이 끼니에 내가 올린 밥상 사진 (줄인 JPEG)
+    menu: str | None = None  # 이 끼니에 먹은 메뉴 (logic.clean_menu로 다듬은 글)
 
 
 @dataclass
