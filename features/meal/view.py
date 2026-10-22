@@ -114,7 +114,7 @@ def _render_reco_card(
 ) -> None:
     can_log = slot in LOG_SLOTS
     with st.container(border=True):
-        st.subheader(f"🎀 {rec.menu.name}")
+        st.markdown(f"##### 🎀 {rec.menu.name}")
         st.caption(f"💡 {rec.reason}")
         cols = st.columns(2 if can_log else 1)
         cols[0].button(
@@ -122,16 +122,17 @@ def _render_reco_card(
             key=f"meal_pick_{idx}",
             on_click=_select_menu,
             args=(rec.menu.name,),
-            use_container_width=True,
+            width="stretch",
         )
         if can_log:
             exists = slot in logs
             cols[1].button(
                 "✏️ 이 메뉴로 수정" if exists else "⭐ 이걸로 기록",
                 key=f"meal_log_{idx}",
+                type="primary",
                 on_click=_record,
                 args=(slot, rec.menu.name, "recommend"),
-                use_container_width=True,
+                width="stretch",
             )
 
 
@@ -163,7 +164,7 @@ def _render_restaurants(menu_name: str, region: str) -> None:
 
 
 def _render_log_board(logs: dict[str, MealLog]) -> None:
-    st.markdown("#### 📔 오늘의 기록")
+    st.markdown(f"#### 📔 오늘의 기록 · {len(logs)}/{len(LOG_SLOTS)}")
     for slot in LOG_SLOTS:
         label = _LABELS[slot]
         log = logs.get(slot)
@@ -174,11 +175,11 @@ def _render_log_board(logs: dict[str, MealLog]) -> None:
                 c1, c2 = st.columns(2)
                 c1.button(
                     "✏️ 수정", key=f"meal_edit_{slot}", on_click=_start_edit,
-                    args=(slot, log.menu_name), use_container_width=True,
+                    args=(slot, log.menu_name), width="stretch",
                 )
                 c2.button(
                     "🗑️ 삭제", key=f"meal_del_{slot}", on_click=_delete,
-                    args=(slot,), use_container_width=True,
+                    args=(slot,), width="stretch",
                 )
             else:
                 st.markdown(f"**{label}** · {'수정하기' if editing else '아직 기록이 없어요'}")
@@ -188,13 +189,13 @@ def _render_log_board(logs: dict[str, MealLog]) -> None:
                 )
                 c1, c2 = st.columns(2)
                 c1.button(
-                    "⭐ 저장", key=f"meal_save_{slot}", on_click=_record,
-                    args=(slot, name, "manual"), use_container_width=True,
+                    "⭐ 저장", key=f"meal_save_{slot}", type="primary", on_click=_record,
+                    args=(slot, name, "manual"), width="stretch",
                 )
                 if editing:
                     c2.button(
                         "취소", key=f"meal_cancel_{slot}", on_click=_cancel_edit,
-                        use_container_width=True,
+                        width="stretch",
                     )
 
 
@@ -202,32 +203,39 @@ def render() -> None:
     _init_state()
     st.title("🍚 오늘의 한 끼")
 
-    c1, c2 = st.columns(2)
-    c1.selectbox("지역", list(REGIONS), key=K_REGION)
-    slot = c2.selectbox(
-        "끼니", list(_LABELS), format_func=_LABELS.__getitem__, key=K_SLOT
-    )
-    lat, lng = REGIONS[st.session_state[K_REGION]]
-
+    region = st.selectbox("지역", list(REGIONS), key=K_REGION)
+    lat, lng = REGIONS[region]
     weather = get_weather(lat, lng)
+
+    # 위치·날씨를 한 줄로 묶은 location pill 행
     if weather is None:
-        st.caption("☁️ 날씨 정보 없이 추천했어요")
+        st.caption(f"📍 {region} · ☁️ 날씨 정보 없이 추천했어요")
     else:
-        st.caption(f"🌡️ 지금 {weather['temp']:g}° (체감 {weather['feels_like']:g}°)")
+        st.caption(
+            f"📍 {region} · 🌡️ 지금 {weather['temp']:g}° (체감 {weather['feels_like']:g}°)"
+        )
+
+    # 끼니 이항·다항 선택은 pill 버튼으로. 해제해도 기존 선택을 유지한다
+    picked = st.pills(
+        "끼니", list(_LABELS), format_func=_LABELS.__getitem__, selection_mode="single",
+        key=K_SLOT, width="stretch",
+    )
+    slot = picked or slot_for_hour(now().hour, _CONFIG)
 
     reco = _ensure_reco(slot, weather)
     logs = storage.get_logs(today())
 
-    st.markdown(f"#### ✨ 지금은 {_LABELS[slot]} 시간이에요")
-    for idx, rec in enumerate(reco["items"]):
-        _render_reco_card(idx, rec, slot, logs)
-    st.button(
-        "🔄 다시 추천", key="meal_reroll", on_click=_reroll, args=(slot, weather),
-        use_container_width=True,
-    )
-
-    selected = st.session_state[K_SELECTED]
-    if selected:
-        _render_restaurants(selected, st.session_state[K_REGION])
-
-    _render_log_board(logs)
+    tab_reco, tab_log = st.tabs(["✨ 추천", f"📔 기록 {len(logs)}/{len(LOG_SLOTS)}"])
+    with tab_reco:
+        st.markdown(f"#### {_LABELS[slot]} 시간에 어울리는 메뉴")
+        for idx, rec in enumerate(reco["items"]):
+            _render_reco_card(idx, rec, slot, logs)
+        st.button(
+            "🔄 다시 추천", key="meal_reroll", on_click=_reroll, args=(slot, weather),
+            width="stretch",
+        )
+        selected = st.session_state[K_SELECTED]
+        if selected:
+            _render_restaurants(selected, region)
+    with tab_log:
+        _render_log_board(logs)
