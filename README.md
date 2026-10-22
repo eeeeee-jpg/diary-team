@@ -3,7 +3,7 @@
 하루의 끼니·독서·주유·날씨 코디를 한 권의 귀여운 다이어리에 모아 기록하고 추천받는 웹앱입니다.
 파스텔 톤의 귀엽고 공주풍인 스타일로 만듭니다.
 
-> **상태: 기획 단계 (PRD v0.6).** 아직 실행할 수 있는 코드는 없습니다. 앱 골격은 1주차에 `main`에 올라올 예정입니다.
+> **상태: 기획 단계 (PRD v0.7).** 아직 실행할 수 있는 코드는 없습니다. 앱 골격은 1주차에 `main`에 올라올 예정입니다.
 
 ## 서비스 소개
 
@@ -33,11 +33,13 @@
 
 | 담당 | 서비스 | 위치 |
 |---|---|---|
-| 팀원 A | 홈 + 오늘의 한 끼 (공통 UI·병합·배포 주관) | `app.py`, `shared/`, `features/meal/` |
+| 팀원 A | 홈 + 오늘의 한 끼 (공통 UI) | `app.py`, `shared/`, `features/meal/` |
 | 팀원 B | 독서 챌린지 | `features/reading/` |
 | 팀원 C | 밥때 손님 | `features/guest/` |
-| 팀원 D | JOOYOU | `features/fuel/` |
+| 팀원 D (팀장) | JOOYOU (저장소 관리·병합·배포 주관) | `features/fuel/` |
 | 팀원 E | 날씨 + 코디 | `features/weather/` |
+
+저장소: https://github.com/eeeeee-jpg/diary-team (2026-10-22 `jvvy0901/diary`에서 이전)
 
 합칠 때 충돌하지 않도록 아래 규칙을 지킵니다.
 
@@ -79,7 +81,7 @@ streamlit run features/meal/dev.py       # 서비스 단독 실행 (오늘의 �
 
 ## 배포
 
-- Streamlit Community Cloud에서 GitHub `main`의 `app.py`를 메인 파일로 연결합니다. 배포 설정은 팀원 A가 합니다.
+- Streamlit Community Cloud에서 GitHub `main`의 `app.py`를 메인 파일로 연결합니다. 배포 설정은 팀장(팀원 D)이 합니다.
 - Python 버전은 배포 설정의 Advanced settings에서 3.14로 지정합니다. 포럼 보고에 따르면 `runtime.txt`와 `.python-version`은 무시되고, 선택과 다른 버전으로 빌드된 사례도 있어서 배포 후 앱 안에서 실제 Python 버전을 확인합니다.
 - API 키는 Community Cloud의 Secrets 설정 화면에 입력합니다. 저장소에는 넣지 않습니다.
 - 배포된 앱은 공개 URL입니다. 개인정보나 키가 화면에 나오지 않는지 확인합니다.
