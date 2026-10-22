@@ -1,0 +1,973 @@
+{
+  "styles": [
+    {
+      "id": "simple",
+      "name": "Simple",
+      "summary": "기본 아이템 중심, 깔끔한 조합"
+    },
+    {
+      "id": "modern",
+      "name": "Modern",
+      "summary": "정돈된 실루엣, 셔츠와 슬랙스"
+    },
+    {
+      "id": "casual",
+      "name": "Casual",
+      "summary": "편안한 일상복, 데님과 맨투맨"
+    },
+    {
+      "id": "lovely",
+      "name": "Lovely",
+      "summary": "부드러운 색감, 가디건과 스커트"
+    },
+    {
+      "id": "street",
+      "name": "Street",
+      "summary": "오버핏, 후드와 와이드 팬츠"
+    }
+  ],
+  "items": {
+    "tee_white_short": {
+      "category": "top",
+      "name": "화이트 반팔 티셔츠",
+      "image_path": "assets/items/tee_white_short.webp"
+    },
+    "tee_basic_short": {
+      "category": "top",
+      "name": "무지 반팔 티셔츠",
+      "image_path": "assets/items/tee_basic_short.webp"
+    },
+    "longtee_basic": {
+      "category": "top",
+      "name": "무지 긴팔 티셔츠",
+      "image_path": "assets/items/longtee_basic.webp"
+    },
+    "knit_cream": {
+      "category": "top",
+      "name": "크림 니트",
+      "image_path": "assets/items/knit_cream.webp"
+    },
+    "knit_crew_thick": {
+      "category": "top",
+      "name": "두꺼운 크루넥 니트",
+      "image_path": "assets/items/knit_crew_thick.webp"
+    },
+    "knit_turtleneck": {
+      "category": "top",
+      "name": "터틀넥 니트",
+      "image_path": "assets/items/knit_turtleneck.webp"
+    },
+    "knit_turtleneck_thick": {
+      "category": "top",
+      "name": "두꺼운 터틀넥 니트",
+      "image_path": "assets/items/knit_turtleneck_thick.webp"
+    },
+    "shirt_linen_short": {
+      "category": "top",
+      "name": "린넨 반팔 셔츠",
+      "image_path": "assets/items/shirt_linen_short.webp"
+    },
+    "polo_knit_short": {
+      "category": "top",
+      "name": "반팔 니트 폴로",
+      "image_path": "assets/items/polo_knit_short.webp"
+    },
+    "shirt_stripe": {
+      "category": "top",
+      "name": "스트라이프 셔츠",
+      "image_path": "assets/items/shirt_stripe.webp"
+    },
+    "knit_highgauge": {
+      "category": "top",
+      "name": "하이게이지 니트",
+      "image_path": "assets/items/knit_highgauge.webp"
+    },
+    "tee_graphic_short": {
+      "category": "top",
+      "name": "그래픽 반팔 티셔츠",
+      "image_path": "assets/items/tee_graphic_short.webp"
+    },
+    "tee_oversize_short": {
+      "category": "top",
+      "name": "오버핏 반팔 티셔츠",
+      "image_path": "assets/items/tee_oversize_short.webp"
+    },
+    "sweatshirt": {
+      "category": "top",
+      "name": "맨투맨",
+      "image_path": "assets/items/sweatshirt.webp"
+    },
+    "knit_cable": {
+      "category": "top",
+      "name": "꽈배기 니트",
+      "image_path": "assets/items/knit_cable.webp"
+    },
+    "sweatshirt_fleece": {
+      "category": "top",
+      "name": "기모 맨투맨",
+      "image_path": "assets/items/sweatshirt_fleece.webp"
+    },
+    "blouse_puff_short": {
+      "category": "top",
+      "name": "퍼프 반팔 블라우스",
+      "image_path": "assets/items/blouse_puff_short.webp"
+    },
+    "knit_tee_pastel": {
+      "category": "top",
+      "name": "파스텔 반팔 니트",
+      "image_path": "assets/items/knit_tee_pastel.webp"
+    },
+    "blouse_ribbon": {
+      "category": "top",
+      "name": "리본 블라우스",
+      "image_path": "assets/items/blouse_ribbon.webp"
+    },
+    "knit_angora": {
+      "category": "top",
+      "name": "앙고라 니트",
+      "image_path": "assets/items/knit_angora.webp"
+    },
+    "tee_graphic_oversize": {
+      "category": "top",
+      "name": "오버핏 그래픽 반팔",
+      "image_path": "assets/items/tee_graphic_oversize.webp"
+    },
+    "hoodie": {
+      "category": "top",
+      "name": "오버핏 후드 티",
+      "image_path": "assets/items/hoodie.webp"
+    },
+    "hoodie_fleece": {
+      "category": "top",
+      "name": "기모 후드 티",
+      "image_path": "assets/items/hoodie_fleece.webp"
+    },
+    "shorts_linen_beige": {
+      "category": "bottom",
+      "name": "베이지 린넨 반바지",
+      "image_path": "assets/items/shorts_linen_beige.webp"
+    },
+    "pants_cotton_beige": {
+      "category": "bottom",
+      "name": "베이지 면바지",
+      "image_path": "assets/items/pants_cotton_beige.webp"
+    },
+    "jeans_straight": {
+      "category": "bottom",
+      "name": "스트레이트 청바지",
+      "image_path": "assets/items/jeans_straight.webp"
+    },
+    "slacks_black": {
+      "category": "bottom",
+      "name": "블랙 슬랙스",
+      "image_path": "assets/items/slacks_black.webp"
+    },
+    "pants_fleece_straight": {
+      "category": "bottom",
+      "name": "기모 일자 바지",
+      "image_path": "assets/items/pants_fleece_straight.webp"
+    },
+    "slacks_fleece": {
+      "category": "bottom",
+      "name": "기모 슬랙스",
+      "image_path": "assets/items/slacks_fleece.webp"
+    },
+    "slacks_cool_wide": {
+      "category": "bottom",
+      "name": "와이드 쿨 슬랙스",
+      "image_path": "assets/items/slacks_cool_wide.webp"
+    },
+    "slacks_cream": {
+      "category": "bottom",
+      "name": "크림 슬랙스",
+      "image_path": "assets/items/slacks_cream.webp"
+    },
+    "slacks_wool_gray": {
+      "category": "bottom",
+      "name": "그레이 울 슬랙스",
+      "image_path": "assets/items/slacks_wool_gray.webp"
+    },
+    "shorts_denim": {
+      "category": "bottom",
+      "name": "데님 반바지",
+      "image_path": "assets/items/shorts_denim.webp"
+    },
+    "jeans_light": {
+      "category": "bottom",
+      "name": "연청 데님 팬츠",
+      "image_path": "assets/items/jeans_light.webp"
+    },
+    "jeans_wide_light": {
+      "category": "bottom",
+      "name": "연청 와이드 데님",
+      "image_path": "assets/items/jeans_wide_light.webp"
+    },
+    "jeans_raw": {
+      "category": "bottom",
+      "name": "생지 데님",
+      "image_path": "assets/items/jeans_raw.webp"
+    },
+    "jeans_fleece": {
+      "category": "bottom",
+      "name": "기모 데님",
+      "image_path": "assets/items/jeans_fleece.webp"
+    },
+    "joggers_fleece": {
+      "category": "bottom",
+      "name": "기모 조거 팬츠",
+      "image_path": "assets/items/joggers_fleece.webp"
+    },
+    "skirt_flare_mini": {
+      "category": "bottom",
+      "name": "플레어 미니스커트",
+      "image_path": "assets/items/skirt_flare_mini.webp"
+    },
+    "skirt_pleats_long": {
+      "category": "bottom",
+      "name": "플리츠 롱스커트",
+      "image_path": "assets/items/skirt_pleats_long.webp"
+    },
+    "skirt_flare_midi": {
+      "category": "bottom",
+      "name": "플레어 미디스커트",
+      "image_path": "assets/items/skirt_flare_midi.webp"
+    },
+    "skirt_wool_long": {
+      "category": "bottom",
+      "name": "울 롱스커트",
+      "image_path": "assets/items/skirt_wool_long.webp"
+    },
+    "skirt_fleece_long": {
+      "category": "bottom",
+      "name": "기모 롱스커트",
+      "image_path": "assets/items/skirt_fleece_long.webp"
+    },
+    "shorts_nylon_wide": {
+      "category": "bottom",
+      "name": "나일론 와이드 반바지",
+      "image_path": "assets/items/shorts_nylon_wide.webp"
+    },
+    "pants_cargo_wide": {
+      "category": "bottom",
+      "name": "와이드 카고 팬츠",
+      "image_path": "assets/items/pants_cargo_wide.webp"
+    },
+    "jeans_wide": {
+      "category": "bottom",
+      "name": "와이드 데님",
+      "image_path": "assets/items/jeans_wide.webp"
+    },
+    "pants_fleece_wide": {
+      "category": "bottom",
+      "name": "기모 와이드 팬츠",
+      "image_path": "assets/items/pants_fleece_wide.webp"
+    },
+    "shirt_white_thin": {
+      "category": "outer",
+      "name": "얇은 화이트 셔츠",
+      "image_path": "assets/items/shirt_white_thin.webp"
+    },
+    "cardigan_navy": {
+      "category": "outer",
+      "name": "네이비 가디건",
+      "image_path": "assets/items/cardigan_navy.webp"
+    },
+    "coat_trench_beige": {
+      "category": "outer",
+      "name": "베이지 트렌치코트",
+      "image_path": "assets/items/coat_trench_beige.webp"
+    },
+    "coat_wool_single": {
+      "category": "outer",
+      "name": "울 싱글 코트",
+      "image_path": "assets/items/coat_wool_single.webp"
+    },
+    "padding_long_black": {
+      "category": "outer",
+      "name": "블랙 롱패딩",
+      "image_path": "assets/items/padding_long_black.webp"
+    },
+    "jacket_tailored_thin": {
+      "category": "outer",
+      "name": "얇은 테일러드 재킷",
+      "image_path": "assets/items/jacket_tailored_thin.webp"
+    },
+    "coat_long_charcoal": {
+      "category": "outer",
+      "name": "차콜 롱코트",
+      "image_path": "assets/items/coat_long_charcoal.webp"
+    },
+    "padding_long_matte": {
+      "category": "outer",
+      "name": "무광 롱 다운코트",
+      "image_path": "assets/items/padding_long_matte.webp"
+    },
+    "jacket_denim": {
+      "category": "outer",
+      "name": "데님 재킷",
+      "image_path": "assets/items/jacket_denim.webp"
+    },
+    "jacket_work": {
+      "category": "outer",
+      "name": "워크 재킷",
+      "image_path": "assets/items/jacket_work.webp"
+    },
+    "coat_duffle": {
+      "category": "outer",
+      "name": "더플코트",
+      "image_path": "assets/items/coat_duffle.webp"
+    },
+    "padding_short": {
+      "category": "outer",
+      "name": "숏패딩",
+      "image_path": "assets/items/padding_short.webp"
+    },
+    "cardigan_summer": {
+      "category": "outer",
+      "name": "얇은 여름 가디건",
+      "image_path": "assets/items/cardigan_summer.webp"
+    },
+    "cardigan_pastel": {
+      "category": "outer",
+      "name": "파스텔 가디건",
+      "image_path": "assets/items/cardigan_pastel.webp"
+    },
+    "jacket_tweed": {
+      "category": "outer",
+      "name": "트위드 재킷",
+      "image_path": "assets/items/jacket_tweed.webp"
+    },
+    "coat_wool_pink": {
+      "category": "outer",
+      "name": "핑크 울 코트",
+      "image_path": "assets/items/coat_wool_pink.webp"
+    },
+    "padding_long_furcollar": {
+      "category": "outer",
+      "name": "퍼 칼라 롱패딩",
+      "image_path": "assets/items/padding_long_furcollar.webp"
+    },
+    "jacket_coach": {
+      "category": "outer",
+      "name": "코치 재킷",
+      "image_path": "assets/items/jacket_coach.webp"
+    },
+    "jacket_varsity": {
+      "category": "outer",
+      "name": "바시티 재킷",
+      "image_path": "assets/items/jacket_varsity.webp"
+    },
+    "jacket_ma1": {
+      "category": "outer",
+      "name": "오버핏 MA-1 항공 점퍼",
+      "image_path": "assets/items/jacket_ma1.webp"
+    },
+    "padding_puffer": {
+      "category": "outer",
+      "name": "오버핏 푸퍼 패딩",
+      "image_path": "assets/items/padding_puffer.webp"
+    }
+  },
+  "outfits": [
+    {
+      "outfit_id": "simple_T01_01",
+      "style": "simple",
+      "temperature_code": "T01",
+      "top": {
+        "item_id": "tee_white_short",
+        "reason": "땀을 잘 흡수하는 면 반팔이 제일 시원해요."
+      },
+      "bottom": {
+        "item_id": "shorts_linen_beige",
+        "reason": "통풍이 잘 돼서 더위가 덜해요."
+      },
+      "outer": null,
+      "accessories": [],
+      "description": "흰 티 한 장으로 끝내는 가장 시원한 정답.",
+      "image_path": "assets/outfits/simple_T01_01.webp"
+    },
+    {
+      "outfit_id": "simple_T02_01",
+      "style": "simple",
+      "temperature_code": "T02",
+      "top": {
+        "item_id": "tee_basic_short",
+        "reason": "낮 기온엔 반팔 한 장이 딱 좋아요."
+      },
+      "bottom": {
+        "item_id": "pants_cotton_beige",
+        "reason": "얇은 면바지라 덥지 않고 단정해요."
+      },
+      "outer": {
+        "item_id": "shirt_white_thin",
+        "reason": "냉방이 센 실내나 그늘에서 살짝 걸치기 좋아요."
+      },
+      "accessories": [],
+      "description": "반팔에 셔츠 한 장, 실패 없는 기본 조합.",
+      "image_path": "assets/outfits/simple_T02_01.webp"
+    },
+    {
+      "outfit_id": "simple_T03_01",
+      "style": "simple",
+      "temperature_code": "T03",
+      "top": {
+        "item_id": "longtee_basic",
+        "reason": "반팔은 서늘하고 니트는 더운 날씨예요."
+      },
+      "bottom": {
+        "item_id": "jeans_straight",
+        "reason": "어디에나 어울리는 기본 하의예요."
+      },
+      "outer": {
+        "item_id": "cardigan_navy",
+        "reason": "해가 지면 쌀쌀해져서 한 겹 있으면 든든해요."
+      },
+      "accessories": [],
+      "description": "긴팔 티에 가디건, 입고 벗기 편한 간절기 기본.",
+      "image_path": "assets/outfits/simple_T03_01.webp"
+    },
+    {
+      "outfit_id": "simple_T04_01",
+      "style": "simple",
+      "temperature_code": "T04",
+      "top": {
+        "item_id": "knit_cream",
+        "reason": "가볍지만 체온은 지켜주는 두께예요."
+      },
+      "bottom": {
+        "item_id": "slacks_black",
+        "reason": "니트와 잘 어울리고 단정해 보여요."
+      },
+      "outer": {
+        "item_id": "coat_trench_beige",
+        "reason": "바람을 막아줄 가벼운 아우터가 필요한 기온이에요."
+      },
+      "accessories": [],
+      "description": "니트와 트렌치코트, 깔끔하게 떨어지는 간절기 공식.",
+      "image_path": "assets/outfits/simple_T04_01.webp"
+    },
+    {
+      "outfit_id": "simple_T05_01",
+      "style": "simple",
+      "temperature_code": "T05",
+      "top": {
+        "item_id": "knit_crew_thick",
+        "reason": "도톰한 니트가 체온을 오래 지켜줘요."
+      },
+      "bottom": {
+        "item_id": "pants_fleece_straight",
+        "reason": "안감이 있어 다리가 덜 시려요."
+      },
+      "outer": {
+        "item_id": "coat_wool_single",
+        "reason": "찬 바람을 막는 두툼한 코트가 필요해요."
+      },
+      "accessories": [],
+      "description": "도톰한 니트에 코트 한 벌, 군더더기 없는 겨울 준비.",
+      "image_path": "assets/outfits/simple_T05_01.webp"
+    },
+    {
+      "outfit_id": "simple_T06_01",
+      "style": "simple",
+      "temperature_code": "T06",
+      "top": {
+        "item_id": "knit_turtleneck",
+        "reason": "목까지 덮어 찬 공기를 막아줘요."
+      },
+      "bottom": {
+        "item_id": "slacks_fleece",
+        "reason": "안쪽 기모가 보온을 책임져요."
+      },
+      "outer": {
+        "item_id": "padding_long_black",
+        "reason": "이 정도 추위엔 무릎까지 덮는 패딩이 가장 확실해요."
+      },
+      "accessories": [
+        "목도리",
+        "장갑"
+      ],
+      "description": "터틀넥에 롱패딩, 추위 앞에서 타협 없는 조합.",
+      "image_path": "assets/outfits/simple_T06_01.webp"
+    },
+    {
+      "outfit_id": "modern_T01_01",
+      "style": "modern",
+      "temperature_code": "T01",
+      "top": {
+        "item_id": "shirt_linen_short",
+        "reason": "깃이 있어 단정하면서도 시원해요."
+      },
+      "bottom": {
+        "item_id": "slacks_cool_wide",
+        "reason": "몸에 붙지 않아 바람이 잘 통해요."
+      },
+      "outer": null,
+      "accessories": [],
+      "description": "더운 날에도 정돈된 인상을 지키는 셔츠 룩.",
+      "image_path": "assets/outfits/modern_T01_01.webp"
+    },
+    {
+      "outfit_id": "modern_T02_01",
+      "style": "modern",
+      "temperature_code": "T02",
+      "top": {
+        "item_id": "polo_knit_short",
+        "reason": "셔츠보다 가볍고 티셔츠보다 단정해요."
+      },
+      "bottom": {
+        "item_id": "slacks_cream",
+        "reason": "밝은 톤이라 답답해 보이지 않아요."
+      },
+      "outer": null,
+      "accessories": [],
+      "description": "니트 폴로와 슬랙스로 완성하는 깔끔한 여름 룩.",
+      "image_path": "assets/outfits/modern_T02_01.webp"
+    },
+    {
+      "outfit_id": "modern_T03_01",
+      "style": "modern",
+      "temperature_code": "T03",
+      "top": {
+        "item_id": "shirt_stripe",
+        "reason": "긴팔 셔츠 한 장이 딱 맞는 기온이에요."
+      },
+      "bottom": {
+        "item_id": "slacks_black",
+        "reason": "셔츠와 맞춰 실루엣을 정돈해줘요."
+      },
+      "outer": {
+        "item_id": "jacket_tailored_thin",
+        "reason": "서늘할 때 걸치면 실루엣까지 반듯해져요."
+      },
+      "accessories": [],
+      "description": "셔츠에 재킷, 반듯한 실루엣의 정석.",
+      "image_path": "assets/outfits/modern_T03_01.webp"
+    },
+    {
+      "outfit_id": "modern_T04_01",
+      "style": "modern",
+      "temperature_code": "T04",
+      "top": {
+        "item_id": "knit_highgauge",
+        "reason": "얇고 촘촘해서 겉옷 안에 겹쳐 입기 좋아요."
+      },
+      "bottom": {
+        "item_id": "slacks_wool_gray",
+        "reason": "울 소재라 쌀쌀한 날에도 따뜻해요."
+      },
+      "outer": {
+        "item_id": "coat_trench_beige",
+        "reason": "가볍게 바람을 막으면서 단정함을 더해줘요."
+      },
+      "accessories": [],
+      "description": "니트와 트렌치코트로 차분하게 정리한 룩.",
+      "image_path": "assets/outfits/modern_T04_01.webp"
+    },
+    {
+      "outfit_id": "modern_T05_01",
+      "style": "modern",
+      "temperature_code": "T05",
+      "top": {
+        "item_id": "knit_turtleneck",
+        "reason": "목을 감싸 코트 안에서도 따뜻해요."
+      },
+      "bottom": {
+        "item_id": "slacks_wool_gray",
+        "reason": "울 소재라 추운 날에도 단정하게 따뜻해요."
+      },
+      "outer": {
+        "item_id": "coat_long_charcoal",
+        "reason": "무릎까지 오는 기장이 찬 바람을 막아줘요."
+      },
+      "accessories": [],
+      "description": "터틀넥과 롱코트, 도시적인 겨울 실루엣.",
+      "image_path": "assets/outfits/modern_T05_01.webp"
+    },
+    {
+      "outfit_id": "modern_T06_01",
+      "style": "modern",
+      "temperature_code": "T06",
+      "top": {
+        "item_id": "knit_turtleneck_thick",
+        "reason": "두꺼운 짜임이 추위를 단단히 막아줘요."
+      },
+      "bottom": {
+        "item_id": "slacks_fleece",
+        "reason": "깔끔한 핏에 안쪽은 기모라 따뜻해요."
+      },
+      "outer": {
+        "item_id": "padding_long_matte",
+        "reason": "코트처럼 깔끔한 디자인에 패딩의 보온력을 더했어요."
+      },
+      "accessories": [
+        "캐시미어 머플러",
+        "가죽 장갑"
+      ],
+      "description": "추워도 실루엣은 포기하지 않는 다운코트 룩.",
+      "image_path": "assets/outfits/modern_T06_01.webp"
+    },
+    {
+      "outfit_id": "casual_T01_01",
+      "style": "casual",
+      "temperature_code": "T01",
+      "top": {
+        "item_id": "tee_graphic_short",
+        "reason": "가볍고 편해서 하루 종일 부담 없어요."
+      },
+      "bottom": {
+        "item_id": "shorts_denim",
+        "reason": "시원하고 어떤 티셔츠와도 잘 어울려요."
+      },
+      "outer": null,
+      "accessories": [
+        "캡 모자"
+      ],
+      "description": "그래픽 티에 데님 반바지, 여름 기본 캐주얼.",
+      "image_path": "assets/outfits/casual_T01_01.webp"
+    },
+    {
+      "outfit_id": "casual_T02_01",
+      "style": "casual",
+      "temperature_code": "T02",
+      "top": {
+        "item_id": "tee_oversize_short",
+        "reason": "여유 있는 핏이라 덥지 않아요."
+      },
+      "bottom": {
+        "item_id": "jeans_light",
+        "reason": "밝은 색감이라 계절감이 살아요."
+      },
+      "outer": null,
+      "accessories": [],
+      "description": "연청 데님과 반팔 티, 가볍게 나서기 좋은 조합.",
+      "image_path": "assets/outfits/casual_T02_01.webp"
+    },
+    {
+      "outfit_id": "casual_T03_01",
+      "style": "casual",
+      "temperature_code": "T03",
+      "top": {
+        "item_id": "sweatshirt",
+        "reason": "얇은 긴팔보다 포근하고 니트보다 편해요."
+      },
+      "bottom": {
+        "item_id": "jeans_wide_light",
+        "reason": "편안한 핏이라 활동하기 좋아요."
+      },
+      "outer": {
+        "item_id": "jacket_denim",
+        "reason": "얇은 재킷 하나로 서늘한 바람을 막을 수 있어요."
+      },
+      "accessories": [],
+      "description": "맨투맨에 데님 재킷, 편하고 경쾌한 주말 룩.",
+      "image_path": "assets/outfits/casual_T03_01.webp"
+    },
+    {
+      "outfit_id": "casual_T04_01",
+      "style": "casual",
+      "temperature_code": "T04",
+      "top": {
+        "item_id": "knit_cable",
+        "reason": "도톰한 짜임이 쌀쌀한 날씨에 딱이에요."
+      },
+      "bottom": {
+        "item_id": "jeans_raw",
+        "reason": "진한 색이라 니트와 차분하게 어울려요."
+      },
+      "outer": {
+        "item_id": "jacket_work",
+        "reason": "튼튼한 소재가 바람을 막아줘요."
+      },
+      "accessories": [],
+      "description": "니트와 워크 재킷, 편하지만 허술하지 않은 조합.",
+      "image_path": "assets/outfits/casual_T04_01.webp"
+    },
+    {
+      "outfit_id": "casual_T05_01",
+      "style": "casual",
+      "temperature_code": "T05",
+      "top": {
+        "item_id": "sweatshirt_fleece",
+        "reason": "안쪽 기모가 따뜻함을 채워줘요."
+      },
+      "bottom": {
+        "item_id": "jeans_fleece",
+        "reason": "청바지 핏 그대로 더 따뜻해요."
+      },
+      "outer": {
+        "item_id": "coat_duffle",
+        "reason": "도톰한 울 소재가 찬 공기를 막아줘요."
+      },
+      "accessories": [
+        "비니"
+      ],
+      "description": "더플코트와 맨투맨, 포근한 겨울 캐주얼.",
+      "image_path": "assets/outfits/casual_T05_01.webp"
+    },
+    {
+      "outfit_id": "casual_T06_01",
+      "style": "casual",
+      "temperature_code": "T06",
+      "top": {
+        "item_id": "sweatshirt_fleece",
+        "reason": "기모 안감이 패딩 안에서 온기를 지켜줘요."
+      },
+      "bottom": {
+        "item_id": "joggers_fleece",
+        "reason": "발목까지 감싸서 찬 바람이 덜 들어와요."
+      },
+      "outer": {
+        "item_id": "padding_short",
+        "reason": "가볍고 따뜻해서 활동하기 편해요."
+      },
+      "accessories": [
+        "목도리",
+        "비니"
+      ],
+      "description": "숏패딩에 기모 조거, 따뜻하고 가벼운 겨울 기본.",
+      "image_path": "assets/outfits/casual_T06_01.webp"
+    },
+    {
+      "outfit_id": "lovely_T01_01",
+      "style": "lovely",
+      "temperature_code": "T01",
+      "top": {
+        "item_id": "blouse_puff_short",
+        "reason": "어깨 볼륨이 사랑스럽고 소재가 가벼워요."
+      },
+      "bottom": {
+        "item_id": "skirt_flare_mini",
+        "reason": "바람이 잘 통해 시원해요."
+      },
+      "outer": null,
+      "accessories": [],
+      "description": "퍼프 블라우스와 플레어 스커트, 여름의 러블리 정석.",
+      "image_path": "assets/outfits/lovely_T01_01.webp"
+    },
+    {
+      "outfit_id": "lovely_T02_01",
+      "style": "lovely",
+      "temperature_code": "T02",
+      "top": {
+        "item_id": "knit_tee_pastel",
+        "reason": "부드러운 색감에 얇은 짜임이라 덥지 않아요."
+      },
+      "bottom": {
+        "item_id": "skirt_pleats_long",
+        "reason": "걸을 때마다 가볍게 흔들려 시원해 보여요."
+      },
+      "outer": {
+        "item_id": "cardigan_summer",
+        "reason": "냉방 바람을 막아주는 가벼운 한 겹이에요."
+      },
+      "accessories": [],
+      "description": "파스텔 니트와 플리츠 스커트, 은은한 러블리 무드.",
+      "image_path": "assets/outfits/lovely_T02_01.webp"
+    },
+    {
+      "outfit_id": "lovely_T03_01",
+      "style": "lovely",
+      "temperature_code": "T03",
+      "top": {
+        "item_id": "blouse_ribbon",
+        "reason": "긴소매 블라우스 한 장이 딱 좋은 기온이에요."
+      },
+      "bottom": {
+        "item_id": "skirt_flare_midi",
+        "reason": "활동하기 편하고 실루엣이 부드러워요."
+      },
+      "outer": {
+        "item_id": "cardigan_pastel",
+        "reason": "쌀쌀해지면 걸치기 좋고 색감도 화사해요."
+      },
+      "accessories": [],
+      "description": "리본 블라우스에 가디건, 부드럽고 화사한 간절기 룩.",
+      "image_path": "assets/outfits/lovely_T03_01.webp"
+    },
+    {
+      "outfit_id": "lovely_T04_01",
+      "style": "lovely",
+      "temperature_code": "T04",
+      "top": {
+        "item_id": "knit_angora",
+        "reason": "포근한 질감이 쌀쌀한 날씨에 잘 어울려요."
+      },
+      "bottom": {
+        "item_id": "skirt_pleats_long",
+        "reason": "긴 기장이라 다리가 덜 추워요."
+      },
+      "outer": {
+        "item_id": "jacket_tweed",
+        "reason": "도톰한 소재라 쌀쌀한 바람을 막아줘요."
+      },
+      "accessories": [],
+      "description": "앙고라 니트와 트위드 재킷, 단정하면서도 사랑스럽게.",
+      "image_path": "assets/outfits/lovely_T04_01.webp"
+    },
+    {
+      "outfit_id": "lovely_T05_01",
+      "style": "lovely",
+      "temperature_code": "T05",
+      "top": {
+        "item_id": "knit_cable",
+        "reason": "도톰한 짜임이 포근하고 따뜻해요."
+      },
+      "bottom": {
+        "item_id": "skirt_wool_long",
+        "reason": "울 소재라 따뜻하고 기장이 길어 다리를 덮어줘요."
+      },
+      "outer": {
+        "item_id": "coat_wool_pink",
+        "reason": "부드러운 색감에 보온력까지 챙겼어요."
+      },
+      "accessories": [
+        "기모 스타킹"
+      ],
+      "description": "핑크 코트와 롱스커트, 추운 날에도 화사하게.",
+      "image_path": "assets/outfits/lovely_T05_01.webp"
+    },
+    {
+      "outfit_id": "lovely_T06_01",
+      "style": "lovely",
+      "temperature_code": "T06",
+      "top": {
+        "item_id": "knit_turtleneck",
+        "reason": "목까지 감싸서 포근해요."
+      },
+      "bottom": {
+        "item_id": "skirt_fleece_long",
+        "reason": "안쪽 기모가 추위를 막아줘요."
+      },
+      "outer": {
+        "item_id": "padding_long_furcollar",
+        "reason": "목 주변까지 포근하게 감싸줘요."
+      },
+      "accessories": [
+        "목도리",
+        "귀마개",
+        "기모 스타킹"
+      ],
+      "description": "퍼 칼라 패딩으로 완성하는 포근한 겨울 러블리.",
+      "image_path": "assets/outfits/lovely_T06_01.webp"
+    },
+    {
+      "outfit_id": "street_T01_01",
+      "style": "street",
+      "temperature_code": "T01",
+      "top": {
+        "item_id": "tee_oversize_short",
+        "reason": "넉넉한 핏이라 몸에 달라붙지 않아요."
+      },
+      "bottom": {
+        "item_id": "shorts_nylon_wide",
+        "reason": "가볍고 빨리 말라 더운 날 편해요."
+      },
+      "outer": null,
+      "accessories": [
+        "버킷햇"
+      ],
+      "description": "오버핏 반팔과 와이드 반바지, 여름 스트릿 기본.",
+      "image_path": "assets/outfits/street_T01_01.webp"
+    },
+    {
+      "outfit_id": "street_T02_01",
+      "style": "street",
+      "temperature_code": "T02",
+      "top": {
+        "item_id": "tee_graphic_oversize",
+        "reason": "여유 있는 핏이라 통풍이 잘 돼요."
+      },
+      "bottom": {
+        "item_id": "pants_cargo_wide",
+        "reason": "넉넉한 핏이라 덥지 않고 활동하기 좋아요."
+      },
+      "outer": null,
+      "accessories": [],
+      "description": "그래픽 반팔에 카고 팬츠, 힘 뺀 스트릿 무드.",
+      "image_path": "assets/outfits/street_T02_01.webp"
+    },
+    {
+      "outfit_id": "street_T03_01",
+      "style": "street",
+      "temperature_code": "T03",
+      "top": {
+        "item_id": "hoodie",
+        "reason": "후드 한 장이면 딱 좋은 선선한 기온이에요."
+      },
+      "bottom": {
+        "item_id": "jeans_wide",
+        "reason": "넉넉한 핏이 후드와 잘 어울려요."
+      },
+      "outer": {
+        "item_id": "jacket_coach",
+        "reason": "얇고 가벼워 바람을 가볍게 막아줘요."
+      },
+      "accessories": [],
+      "description": "후드에 코치 재킷, 레이어드로 완성하는 스트릿 룩.",
+      "image_path": "assets/outfits/street_T03_01.webp"
+    },
+    {
+      "outfit_id": "street_T04_01",
+      "style": "street",
+      "temperature_code": "T04",
+      "top": {
+        "item_id": "hoodie",
+        "reason": "재킷 안에 겹쳐 입기 좋은 두께예요."
+      },
+      "bottom": {
+        "item_id": "pants_cargo_wide",
+        "reason": "넉넉한 핏이 후드와 균형을 맞춰줘요."
+      },
+      "outer": {
+        "item_id": "jacket_varsity",
+        "reason": "도톰한 몸판이 쌀쌀한 바람을 막아줘요."
+      },
+      "accessories": [],
+      "description": "후드와 바시티 재킷, 존재감 있는 간절기 스트릿.",
+      "image_path": "assets/outfits/street_T04_01.webp"
+    },
+    {
+      "outfit_id": "street_T05_01",
+      "style": "street",
+      "temperature_code": "T05",
+      "top": {
+        "item_id": "hoodie_fleece",
+        "reason": "안쪽 기모가 따뜻해서 겉옷과 겹쳐 입기 좋아요."
+      },
+      "bottom": {
+        "item_id": "pants_cargo_wide",
+        "reason": "넉넉한 핏이라 안에 레이어드하기 좋아요."
+      },
+      "outer": {
+        "item_id": "jacket_ma1",
+        "reason": "충전재가 들어 있어 코트만큼 따뜻해요."
+      },
+      "accessories": [],
+      "description": "기모 후드에 항공 점퍼, 따뜻한 오버핏 레이어드.",
+      "image_path": "assets/outfits/street_T05_01.webp"
+    },
+    {
+      "outfit_id": "street_T06_01",
+      "style": "street",
+      "temperature_code": "T06",
+      "top": {
+        "item_id": "hoodie_fleece",
+        "reason": "기모 안감이 패딩 안에서 온기를 지켜줘요."
+      },
+      "bottom": {
+        "item_id": "pants_fleece_wide",
+        "reason": "넉넉한 핏 안쪽까지 따뜻해요."
+      },
+      "outer": {
+        "item_id": "padding_puffer",
+        "reason": "볼륨감 있는 패딩이 추위를 단단히 막아줘요."
+      },
+      "accessories": [
+        "비니",
+        "넥워머"
+      ],
+      "description": "푸퍼 패딩에 와이드 팬츠, 추위도 스타일로 버티기.",
+      "image_path": "assets/outfits/street_T06_01.webp"
+    }
+  ]
+}

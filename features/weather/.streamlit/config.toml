@@ -1,0 +1,11 @@
+# MOIPJI 단독 실행용 테마 (features/weather 폴더에서 streamlit run 할 때 적용)
+[theme]
+base = "light"
+primaryColor = "#2F4BB8"
+backgroundColor = "#F7F8F6"
+secondaryBackgroundColor = "#ECEFF3"
+textColor = "#1A1D23"
+borderColor = "#D9DDE3"
+baseRadius = "10px"
+font = "IBM Plex Sans KR:https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap"
+headingFont = "Do Hyeon:https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"

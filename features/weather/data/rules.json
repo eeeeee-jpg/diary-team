@@ -1,0 +1,107 @@
+{
+  "thresholds": {
+    "rain_pop": 0.5,
+    "wind_speed": 8,
+    "daily_range": 10,
+    "min_forecast_points": 2,
+    "slot_match_minutes": 90
+  },
+  "temperature_ranges": [
+    { "code": "T01", "label": "28°C 이상", "min": 28 },
+    { "code": "T02", "label": "23~27°C", "min": 23 },
+    { "code": "T03", "label": "17~22°C", "min": 17 },
+    { "code": "T04", "label": "12~16°C", "min": 12 },
+    { "code": "T05", "label": "6~11°C", "min": 6 },
+    { "code": "T06", "label": "5°C 이하", "min": null }
+  ],
+  "days": [
+    { "id": "today", "label": "오늘", "offset": 0 },
+    { "id": "tomorrow", "label": "내일", "offset": 1 }
+  ],
+  "time_slots": [
+    {
+      "id": "morning", "label": "오전", "hour": 8, "until_hour": 12,
+      "question": { "today": "오늘 뭐 입지?", "tomorrow": "내일 아침엔 뭐 입지?" }
+    },
+    {
+      "id": "afternoon", "label": "오후", "hour": 13, "until_hour": 17,
+      "question": { "today": "지금은 뭐 입지?", "tomorrow": "내일 낮엔 뭐 입지?" }
+    },
+    {
+      "id": "evening", "label": "저녁", "hour": 19, "until_hour": 24,
+      "question": { "today": "저녁엔 뭐 걸치지?", "tomorrow": "내일 저녁엔 뭐 걸치지?" }
+    }
+  ],
+  "sky": [
+    { "min": 200, "max": 299, "label": "천둥번개", "icon": "thunderstorm" },
+    { "min": 300, "max": 399, "label": "이슬비", "icon": "rainy_light" },
+    { "min": 500, "max": 501, "label": "비", "icon": "rainy" },
+    { "min": 502, "max": 504, "label": "강한 비", "icon": "rainy_heavy" },
+    { "min": 511, "max": 511, "label": "어는 비", "icon": "weather_mix" },
+    { "min": 520, "max": 531, "label": "소나기", "icon": "rainy" },
+    { "min": 600, "max": 602, "label": "눈", "icon": "weather_snowy" },
+    { "min": 611, "max": 616, "label": "진눈깨비", "icon": "weather_mix" },
+    { "min": 620, "max": 622, "label": "눈", "icon": "weather_snowy" },
+    { "min": 701, "max": 701, "label": "박무", "icon": "foggy" },
+    { "min": 711, "max": 711, "label": "연기", "icon": "foggy" },
+    { "min": 721, "max": 721, "label": "연무", "icon": "foggy" },
+    { "min": 731, "max": 731, "label": "먼지", "icon": "air" },
+    { "min": 741, "max": 741, "label": "안개", "icon": "foggy" },
+    { "min": 751, "max": 762, "label": "먼지", "icon": "air" },
+    { "min": 771, "max": 771, "label": "돌풍", "icon": "air" },
+    { "min": 781, "max": 781, "label": "토네이도", "icon": "cyclone" },
+    { "min": 800, "max": 800, "label": "맑음", "icon": "sunny", "icon_night": "clear_night" },
+    { "min": 801, "max": 801, "label": "구름 조금", "icon": "partly_cloudy_day", "icon_night": "partly_cloudy_night" },
+    { "min": 802, "max": 802, "label": "구름 많음", "icon": "partly_cloudy_day", "icon_night": "partly_cloudy_night" },
+    { "min": 803, "max": 804, "label": "흐림", "icon": "cloud" }
+  ],
+  "messages": {
+    "T01": {
+      "morning": "아침부터 후끈해. {day}은 반팔도 더울 각!",
+      "afternoon": "{day}은 반팔도 더울 각!",
+      "evening": "해가 져도 덥다. 반팔 그대로 가자."
+    },
+    "T02": {
+      "morning": "가볍게 입고 나가도 좋겠어.",
+      "afternoon": "가볍게 입고 나가도 좋겠어.",
+      "evening": "저녁에도 가볍게 입어도 괜찮아."
+    },
+    "T03": {
+      "morning": "반팔만 입기엔 살짝 애매해.",
+      "afternoon": "반팔만 입기엔 살짝 애매해.",
+      "evening": "저녁엔 한 겹 더 걸치면 딱이야."
+    },
+    "T04": {
+      "morning": "재킷 하나 걸치면 딱!",
+      "afternoon": "재킷 하나 걸치면 딱!",
+      "evening": "저녁엔 겉옷 꼭 챙겨 입자."
+    },
+    "T05": {
+      "morning": "코트 출동할 타이밍.",
+      "afternoon": "코트 출동할 타이밍.",
+      "evening": "코트 없이 나가면 바로 집에 가고 싶어질걸."
+    },
+    "T06": {
+      "morning": "패딩 안 입으면 후회할지도?",
+      "afternoon": "패딩 안 입으면 후회할지도?",
+      "evening": "밤공기가 매서워. 패딩 지퍼 끝까지!"
+    }
+  },
+  "conditions": [
+    {
+      "id": "rain",
+      "headline": "우산 없이 나갔다간 머리 감기 2회차.",
+      "tip": "우산 챙기기 (강수확률 {value}%)"
+    },
+    {
+      "id": "daily_range",
+      "headline": "낮에 속지 마. 저녁엔 추워!",
+      "tip": "겉옷 챙기기 (일교차 {value}°C)"
+    },
+    {
+      "id": "wind",
+      "headline": "바람이 옷 속까지 파고들 기세야.",
+      "tip": "바람막이 챙기기 (풍속 {value}m/s)"
+    }
+  ]
+}
