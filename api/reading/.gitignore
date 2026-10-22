@@ -1,0 +1,4 @@
+.env
+reading_log.json
+__pycache__/
+.venv/
