@@ -1,6 +1,8 @@
 # 날씨 + 오늘 코디 — MOIPJI (`features/weather`)
-R
+
 **담당:** 팀원 E · **PRD:** Epic F · **명세:** [weather.md](./weather.md) · **이미지 명세:** [weather_image.md](./weather_image.md)
+
+**배포:** https://d07-api2-ggwkynfbytaczddjfewmcq.streamlit.app/
 
 > 오늘 날씨에, 모입지?
 
