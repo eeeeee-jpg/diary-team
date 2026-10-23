@@ -4,56 +4,220 @@
     "wind_speed": 8,
     "daily_range": 10,
     "min_forecast_points": 2,
-    "slot_match_minutes": 90
+    "slot_match_minutes": 90,
+    "cold_feels": 0,
+    "hot_feels": 28,
+    "parasol_feels": 25,
+    "ear_feels": 3,
+    "dust_pm10": 81,
+    "dust_pm25": 36
   },
   "temperature_ranges": [
-    { "code": "T01", "label": "28°C 이상", "min": 28 },
-    { "code": "T02", "label": "23~27°C", "min": 23 },
-    { "code": "T03", "label": "17~22°C", "min": 17 },
-    { "code": "T04", "label": "12~16°C", "min": 12 },
-    { "code": "T05", "label": "6~11°C", "min": 6 },
-    { "code": "T06", "label": "5°C 이하", "min": null }
+    {
+      "code": "T01",
+      "label": "28°C 이상",
+      "min": 28
+    },
+    {
+      "code": "T02",
+      "label": "23~27°C",
+      "min": 23
+    },
+    {
+      "code": "T03",
+      "label": "17~22°C",
+      "min": 17
+    },
+    {
+      "code": "T04",
+      "label": "12~16°C",
+      "min": 12
+    },
+    {
+      "code": "T05",
+      "label": "6~11°C",
+      "min": 6
+    },
+    {
+      "code": "T06",
+      "label": "5°C 이하",
+      "min": null
+    }
   ],
   "days": [
-    { "id": "today", "label": "오늘", "offset": 0 },
-    { "id": "tomorrow", "label": "내일", "offset": 1 }
+    {
+      "id": "today",
+      "label": "오늘",
+      "offset": 0
+    },
+    {
+      "id": "tomorrow",
+      "label": "내일",
+      "offset": 1
+    }
   ],
   "time_slots": [
     {
-      "id": "morning", "label": "오전", "hour": 8, "until_hour": 12,
-      "question": { "today": "오늘 뭐 입지?", "tomorrow": "내일 아침엔 뭐 입지?" }
+      "id": "morning",
+      "label": "오전",
+      "hour": 8,
+      "until_hour": 12,
+      "question": {
+        "today": "오늘 뭐 입지?",
+        "tomorrow": "내일 아침엔 뭐 입지?"
+      }
     },
     {
-      "id": "afternoon", "label": "오후", "hour": 13, "until_hour": 17,
-      "question": { "today": "지금은 뭐 입지?", "tomorrow": "내일 낮엔 뭐 입지?" }
+      "id": "afternoon",
+      "label": "오후",
+      "hour": 13,
+      "until_hour": 17,
+      "question": {
+        "today": "지금은 뭐 입지?",
+        "tomorrow": "내일 낮엔 뭐 입지?"
+      }
     },
     {
-      "id": "evening", "label": "저녁", "hour": 19, "until_hour": 24,
-      "question": { "today": "저녁엔 뭐 걸치지?", "tomorrow": "내일 저녁엔 뭐 걸치지?" }
+      "id": "evening",
+      "label": "저녁",
+      "hour": 19,
+      "until_hour": 24,
+      "question": {
+        "today": "저녁엔 뭐 걸치지?",
+        "tomorrow": "내일 저녁엔 뭐 걸치지?"
+      }
     }
   ],
   "sky": [
-    { "min": 200, "max": 299, "label": "천둥번개", "icon": "thunderstorm" },
-    { "min": 300, "max": 399, "label": "이슬비", "icon": "rainy_light" },
-    { "min": 500, "max": 501, "label": "비", "icon": "rainy" },
-    { "min": 502, "max": 504, "label": "강한 비", "icon": "rainy_heavy" },
-    { "min": 511, "max": 511, "label": "어는 비", "icon": "weather_mix" },
-    { "min": 520, "max": 531, "label": "소나기", "icon": "rainy" },
-    { "min": 600, "max": 602, "label": "눈", "icon": "weather_snowy" },
-    { "min": 611, "max": 616, "label": "진눈깨비", "icon": "weather_mix" },
-    { "min": 620, "max": 622, "label": "눈", "icon": "weather_snowy" },
-    { "min": 701, "max": 701, "label": "박무", "icon": "foggy" },
-    { "min": 711, "max": 711, "label": "연기", "icon": "foggy" },
-    { "min": 721, "max": 721, "label": "연무", "icon": "foggy" },
-    { "min": 731, "max": 731, "label": "먼지", "icon": "air" },
-    { "min": 741, "max": 741, "label": "안개", "icon": "foggy" },
-    { "min": 751, "max": 762, "label": "먼지", "icon": "air" },
-    { "min": 771, "max": 771, "label": "돌풍", "icon": "air" },
-    { "min": 781, "max": 781, "label": "토네이도", "icon": "cyclone" },
-    { "min": 800, "max": 800, "label": "맑음", "icon": "sunny", "icon_night": "clear_night" },
-    { "min": 801, "max": 801, "label": "구름 조금", "icon": "partly_cloudy_day", "icon_night": "partly_cloudy_night" },
-    { "min": 802, "max": 802, "label": "구름 많음", "icon": "partly_cloudy_day", "icon_night": "partly_cloudy_night" },
-    { "min": 803, "max": 804, "label": "흐림", "icon": "cloud" }
+    {
+      "min": 200,
+      "max": 299,
+      "label": "천둥번개",
+      "icon": "thunderstorm"
+    },
+    {
+      "min": 300,
+      "max": 399,
+      "label": "이슬비",
+      "icon": "rainy_light"
+    },
+    {
+      "min": 500,
+      "max": 501,
+      "label": "비",
+      "icon": "rainy"
+    },
+    {
+      "min": 502,
+      "max": 504,
+      "label": "강한 비",
+      "icon": "rainy_heavy"
+    },
+    {
+      "min": 511,
+      "max": 511,
+      "label": "어는 비",
+      "icon": "weather_mix"
+    },
+    {
+      "min": 520,
+      "max": 531,
+      "label": "소나기",
+      "icon": "rainy"
+    },
+    {
+      "min": 600,
+      "max": 602,
+      "label": "눈",
+      "icon": "weather_snowy"
+    },
+    {
+      "min": 611,
+      "max": 616,
+      "label": "진눈깨비",
+      "icon": "weather_mix"
+    },
+    {
+      "min": 620,
+      "max": 622,
+      "label": "눈",
+      "icon": "weather_snowy"
+    },
+    {
+      "min": 701,
+      "max": 701,
+      "label": "박무",
+      "icon": "foggy"
+    },
+    {
+      "min": 711,
+      "max": 711,
+      "label": "연기",
+      "icon": "foggy"
+    },
+    {
+      "min": 721,
+      "max": 721,
+      "label": "연무",
+      "icon": "foggy"
+    },
+    {
+      "min": 731,
+      "max": 731,
+      "label": "먼지",
+      "icon": "air"
+    },
+    {
+      "min": 741,
+      "max": 741,
+      "label": "안개",
+      "icon": "foggy"
+    },
+    {
+      "min": 751,
+      "max": 762,
+      "label": "먼지",
+      "icon": "air"
+    },
+    {
+      "min": 771,
+      "max": 771,
+      "label": "돌풍",
+      "icon": "air"
+    },
+    {
+      "min": 781,
+      "max": 781,
+      "label": "토네이도",
+      "icon": "cyclone"
+    },
+    {
+      "min": 800,
+      "max": 800,
+      "label": "맑음",
+      "icon": "sunny",
+      "icon_night": "clear_night"
+    },
+    {
+      "min": 801,
+      "max": 801,
+      "label": "구름 조금",
+      "icon": "partly_cloudy_day",
+      "icon_night": "partly_cloudy_night"
+    },
+    {
+      "min": 802,
+      "max": 802,
+      "label": "구름 많음",
+      "icon": "partly_cloudy_day",
+      "icon_night": "partly_cloudy_night"
+    },
+    {
+      "min": 803,
+      "max": 804,
+      "label": "흐림",
+      "icon": "cloud"
+    }
   ],
   "messages": {
     "T01": {
@@ -91,17 +255,270 @@
     {
       "id": "rain",
       "headline": "우산 없이 나갔다간 머리 감기 2회차.",
-      "tip": "우산 챙기기 (강수확률 {value}%)"
+      "tip": "우산 챙기기 (강수확률 {value}%)",
+      "supply": "umbrella"
+    },
+    {
+      "id": "dust",
+      "headline": "미세먼지 나쁨! 마스크 쓰고 나가자.",
+      "tip": "마스크 챙기기 ({value})",
+      "supply": "mask"
+    },
+    {
+      "id": "cold",
+      "headline": "손끝까지 얼 기세. 핫팩 하나 챙겨!",
+      "tip": "핫팩 챙기기 (최저 체감 {value}°C)",
+      "supply": "hotpack"
+    },
+    {
+      "id": "ears",
+      "headline": "귀가 시린 날이야. 귀마개 챙겨!",
+      "tip": "귀마개 챙기기 (최저 체감 {value}°C)",
+      "supply": "earmuffs"
+    },
+    {
+      "id": "hot",
+      "headline": "땀 주의보! 물은 꼭 챙겨.",
+      "tip": "물 챙기기 (최고 체감 {value}°C)",
+      "supply": "water"
     },
     {
       "id": "daily_range",
       "headline": "낮에 속지 마. 저녁엔 추워!",
-      "tip": "겉옷 챙기기 (일교차 {value}°C)"
+      "tip": "여벌 가디건 챙기기 (기온 차 {value}°C)",
+      "supply": "extra_layer"
     },
     {
       "id": "wind",
       "headline": "바람이 옷 속까지 파고들 기세야.",
-      "tip": "바람막이 챙기기 (풍속 {value}m/s)"
+      "tip": "바람막이 챙기기 (풍속 {value}m/s)",
+      "supply": "windbreaker"
+    },
+    {
+      "id": "parasol",
+      "headline": "그늘이 필요해. 양산 펼칠 타이밍!",
+      "tip": "양산 챙기기 (최고 체감 {value}°C)",
+      "supply": "parasol"
+    },
+    {
+      "id": "sunny",
+      "headline": "햇빛 쨍쨍! 선글라스 끼고 나가자.",
+      "tip": "선글라스 챙기기 (햇빛 쨍쨍)",
+      "supply": "sunglasses"
     }
-  ]
+  ],
+  "supplies": {
+    "umbrella": {
+      "name": "우산",
+      "lines": [
+        "비 소식 있으니까 우산 챙길까?",
+        "우산 없으면 머리 감기 2회차야. 챙기자!",
+        "하늘이 수상해. 우산 하나 들고 갈까?"
+      ]
+    },
+    "parasol": {
+      "name": "양산",
+      "lines": [
+        "햇볕이 따가우니까 양산 펼칠까?",
+        "그늘을 들고 다니자. 양산 챙길까?",
+        "오늘 같은 날엔 양산이 최고지!"
+      ]
+    },
+    "sunglasses": {
+      "name": "선글라스",
+      "lines": [
+        "햇빛 쨍쨍하니까 선글라스 낄까?",
+        "눈부신 날엔 선글라스가 필수지!",
+        "선글라스 끼면 오늘 코디 완성!"
+      ]
+    },
+    "water": {
+      "name": "물",
+      "lines": [
+        "더우니까 물 한 병 챙길까?",
+        "땀 많이 날 것 같아. 물 꼭 챙기자!",
+        "목마르기 전에 물부터 챙겨 두자."
+      ]
+    },
+    "hotpack": {
+      "name": "핫팩",
+      "lines": [
+        "손 시릴 것 같은데 핫팩 챙길까?",
+        "주머니에 핫팩 하나면 든든하지!",
+        "오늘은 핫팩이 제일 친한 친구야."
+      ]
+    },
+    "windbreaker": {
+      "name": "바람막이",
+      "lines": [
+        "바람 세다던데 바람막이 챙길까?",
+        "바람이 옷 속까지 들어올 기세야. 바람막이 어때?",
+        "가방에 바람막이 하나 넣어 둘까?"
+      ]
+    },
+    "extra_layer": {
+      "name": "여벌 가디건",
+      "lines": [
+        "기온 차가 크니까 가디건 하나 더 챙길까?",
+        "저녁엔 쌀쌀할 수 있어. 가디건 챙기자!",
+        "벗었다 입었다 할 가디건 하나 어때?"
+      ]
+    },
+    "scarf": {
+      "name": "목도리",
+      "lines": [
+        "추우니까 {name} 가져갈까?",
+        "목이 따뜻하면 덜 추워. {name} 두를까?",
+        "{name} 하나면 체감온도가 달라져!"
+      ]
+    },
+    "gloves": {
+      "name": "장갑",
+      "lines": [
+        "손이 시리겠다. {name} 낄까?",
+        "{name} 챙기면 손끝까지 따뜻해!",
+        "주머니에 손 넣고 걷지 말고 {name} 끼자."
+      ]
+    },
+    "beanie": {
+      "name": "비니",
+      "lines": [
+        "머리까지 따뜻하게 {name} 쓸까?",
+        "{name} 쓰면 귀까지 포근해!",
+        "오늘은 {name}로 포인트 줄까?"
+      ]
+    },
+    "cap": {
+      "name": "캡 모자",
+      "lines": [
+        "햇빛 가리게 {name} 쓸까?",
+        "{name} 쓰면 코디가 완성!",
+        "머리 손질 귀찮으면 {name}!"
+      ]
+    },
+    "bucket": {
+      "name": "버킷햇",
+      "lines": [
+        "햇빛 가리게 {name} 쓸까?",
+        "{name} 하나로 분위기 완성!",
+        "오늘 코디엔 {name}이 딱이야."
+      ]
+    },
+    "earmuffs": {
+      "name": "귀마개",
+      "lines": [
+        "귀가 시릴 것 같아. {name} 할까?",
+        "{name} 하면 바람도 무섭지 않지!",
+        "귀까지 따뜻하게 {name} 챙기자."
+      ]
+    },
+    "tights": {
+      "name": "기모 스타킹",
+      "lines": [
+        "다리 시리지 않게 {name} 신을까?",
+        "{name} 신으면 치마도 따뜻해!",
+        "오늘은 {name}이 필수야."
+      ]
+    },
+    "mask": {
+      "name": "마스크",
+      "lines": [
+        "오늘 공기가 탁해. 마스크 챙길까?",
+        "미세먼지 나쁨이래. 마스크 꼭 쓰자!",
+        "목이 칼칼해지기 전에 마스크 하나!"
+      ]
+    },
+    "glasses": {
+      "name": "안경",
+      "lines": [
+        "안경 닦고 나가면 세상이 더 선명해!",
+        "{name} 챙겼지? 오늘 코디에 포인트!",
+        "안경 하나로 분위기 반전 어때?"
+      ]
+    }
+  },
+  "accessory_supplies": [
+    [
+      "캐시미어 머플러",
+      "scarf"
+    ],
+    [
+      "넥워머",
+      "scarf"
+    ],
+    [
+      "목도리",
+      "scarf"
+    ],
+    [
+      "가죽 장갑",
+      "gloves"
+    ],
+    [
+      "장갑",
+      "gloves"
+    ],
+    [
+      "비니",
+      "beanie"
+    ],
+    [
+      "캡 모자",
+      "cap"
+    ],
+    [
+      "버킷햇",
+      "bucket"
+    ],
+    [
+      "귀마개",
+      "earmuffs"
+    ],
+    [
+      "기모 스타킹",
+      "tights"
+    ]
+  ],
+  "bubble": {
+    "opener": "다른 건 챙길 것 없나?",
+    "nothing": [
+      "오늘은 이대로 나가도 괜찮겠다!",
+      "가볍게 나가도 되는 날이야.",
+      "챙길 건 없어. 즐거운 외출!"
+    ]
+  },
+  "wardrobe_tags": [
+    "여행 코디",
+    "직딩룩",
+    "백수룩",
+    "데이트룩",
+    "꾸안꾸룩",
+    "출근룩",
+    "캠퍼스룩",
+    "나들이룩",
+    "운동룩",
+    "하객룩",
+    "집앞룩",
+    "비 오는 날"
+  ],
+  "body": {
+    "height": {
+      "female": [
+        155,
+        167
+      ],
+      "male": [
+        168,
+        180
+      ]
+    },
+    "average_height": {
+      "female": 161,
+      "male": 174
+    },
+    "bmi": [
+      18.5,
+      25
+    ]
+  }
 }

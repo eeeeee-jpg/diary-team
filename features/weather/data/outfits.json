@@ -3,369 +3,1137 @@
     {
       "id": "simple",
       "name": "Simple",
-      "summary": "기본 아이템 중심, 깔끔한 조합"
+      "summary": "기본 아이템 중심, 깔끔한 조합",
+      "genders": [
+        "female",
+        "male"
+      ]
     },
     {
       "id": "modern",
       "name": "Modern",
-      "summary": "정돈된 실루엣, 셔츠와 슬랙스"
+      "summary": "정돈된 실루엣, 셔츠와 슬랙스",
+      "genders": [
+        "female",
+        "male"
+      ]
     },
     {
       "id": "casual",
       "name": "Casual",
-      "summary": "편안한 일상복, 데님과 맨투맨"
+      "summary": "편안한 일상복, 데님과 맨투맨",
+      "genders": [
+        "female",
+        "male"
+      ]
     },
     {
       "id": "lovely",
       "name": "Lovely",
-      "summary": "부드러운 색감, 가디건과 스커트"
+      "summary": "부드러운 색감, 가디건과 스커트",
+      "genders": [
+        "female"
+      ]
+    },
+    {
+      "id": "dandy",
+      "name": "Dandy",
+      "summary": "셔츠·블레이저·코트로 단정하게",
+      "genders": [
+        "male"
+      ]
     },
     {
       "id": "street",
       "name": "Street",
-      "summary": "오버핏, 후드와 와이드 팬츠"
+      "summary": "오버핏, 후드와 와이드 팬츠",
+      "genders": [
+        "female",
+        "male"
+      ]
+    }
+  ],
+  "palette": [
+    {
+      "id": "white",
+      "name": "화이트",
+      "color": "#FAFAFA"
+    },
+    {
+      "id": "ivory",
+      "name": "아이보리",
+      "color": "#F3EBD9"
+    },
+    {
+      "id": "beige",
+      "name": "베이지",
+      "color": "#D9C3A0"
+    },
+    {
+      "id": "camel",
+      "name": "카멜",
+      "color": "#C8A97E"
+    },
+    {
+      "id": "brown",
+      "name": "브라운",
+      "color": "#7A5A44"
+    },
+    {
+      "id": "black",
+      "name": "블랙",
+      "color": "#26262B"
+    },
+    {
+      "id": "charcoal",
+      "name": "차콜",
+      "color": "#4A4A50"
+    },
+    {
+      "id": "gray",
+      "name": "그레이",
+      "color": "#9A9EA6"
+    },
+    {
+      "id": "navy",
+      "name": "네이비",
+      "color": "#2E3D63"
+    },
+    {
+      "id": "denim",
+      "name": "데님",
+      "color": "#4A6FA5"
+    },
+    {
+      "id": "sky",
+      "name": "스카이",
+      "color": "#9CC8EA"
+    },
+    {
+      "id": "khaki",
+      "name": "카키",
+      "color": "#7B7A5E"
+    },
+    {
+      "id": "pink",
+      "name": "핑크",
+      "color": "#F4A7B9"
+    },
+    {
+      "id": "lavender",
+      "name": "라벤더",
+      "color": "#C9B6E4"
+    },
+    {
+      "id": "red",
+      "name": "레드",
+      "color": "#D9505E"
     }
   ],
   "items": {
     "tee_white_short": {
       "category": "top",
       "name": "화이트 반팔 티셔츠",
-      "image_path": "assets/items/tee_white_short.webp"
+      "image_path": "assets/items/tee_white_short.webp",
+      "pixel": {
+        "shape": "short",
+        "color": "#FAFAFA",
+        "detail": null
+      }
     },
     "tee_basic_short": {
       "category": "top",
       "name": "무지 반팔 티셔츠",
-      "image_path": "assets/items/tee_basic_short.webp"
+      "image_path": "assets/items/tee_basic_short.webp",
+      "pixel": {
+        "shape": "short",
+        "color": "#E6DFD1",
+        "detail": null
+      }
     },
     "longtee_basic": {
       "category": "top",
       "name": "무지 긴팔 티셔츠",
-      "image_path": "assets/items/longtee_basic.webp"
+      "image_path": "assets/items/longtee_basic.webp",
+      "pixel": {
+        "shape": "long",
+        "color": "#E6DFD1",
+        "detail": null
+      }
     },
     "knit_cream": {
       "category": "top",
       "name": "크림 니트",
-      "image_path": "assets/items/knit_cream.webp"
+      "image_path": "assets/items/knit_cream.webp",
+      "pixel": {
+        "shape": "long",
+        "color": "#F3E7C9",
+        "detail": "knit"
+      }
     },
     "knit_crew_thick": {
       "category": "top",
       "name": "두꺼운 크루넥 니트",
-      "image_path": "assets/items/knit_crew_thick.webp"
+      "image_path": "assets/items/knit_crew_thick.webp",
+      "pixel": {
+        "shape": "long",
+        "color": "#8C6E5D",
+        "detail": "knit"
+      }
     },
     "knit_turtleneck": {
       "category": "top",
       "name": "터틀넥 니트",
-      "image_path": "assets/items/knit_turtleneck.webp"
+      "image_path": "assets/items/knit_turtleneck.webp",
+      "pixel": {
+        "shape": "long",
+        "color": "#4A4A50",
+        "detail": "turtleneck"
+      }
     },
     "knit_turtleneck_thick": {
       "category": "top",
       "name": "두꺼운 터틀넥 니트",
-      "image_path": "assets/items/knit_turtleneck_thick.webp"
+      "image_path": "assets/items/knit_turtleneck_thick.webp",
+      "pixel": {
+        "shape": "long",
+        "color": "#2F2F35",
+        "detail": "turtleneck"
+      }
     },
     "shirt_linen_short": {
       "category": "top",
       "name": "린넨 반팔 셔츠",
-      "image_path": "assets/items/shirt_linen_short.webp"
+      "image_path": "assets/items/shirt_linen_short.webp",
+      "pixel": {
+        "shape": "short",
+        "color": "#F1EDE3",
+        "detail": "collar"
+      }
     },
     "polo_knit_short": {
       "category": "top",
       "name": "반팔 니트 폴로",
-      "image_path": "assets/items/polo_knit_short.webp"
+      "image_path": "assets/items/polo_knit_short.webp",
+      "pixel": {
+        "shape": "short",
+        "color": "#2E4A6B",
+        "detail": "collar"
+      }
     },
     "shirt_stripe": {
       "category": "top",
       "name": "스트라이프 셔츠",
-      "image_path": "assets/items/shirt_stripe.webp"
+      "image_path": "assets/items/shirt_stripe.webp",
+      "pixel": {
+        "shape": "long",
+        "color": "#FFFFFF",
+        "detail": "stripe"
+      }
     },
     "knit_highgauge": {
       "category": "top",
       "name": "하이게이지 니트",
-      "image_path": "assets/items/knit_highgauge.webp"
+      "image_path": "assets/items/knit_highgauge.webp",
+      "pixel": {
+        "shape": "long",
+        "color": "#3E4A5C",
+        "detail": null
+      }
     },
     "tee_graphic_short": {
       "category": "top",
       "name": "그래픽 반팔 티셔츠",
-      "image_path": "assets/items/tee_graphic_short.webp"
+      "image_path": "assets/items/tee_graphic_short.webp",
+      "pixel": {
+        "shape": "short",
+        "color": "#F6F6F6",
+        "detail": "graphic"
+      }
     },
     "tee_oversize_short": {
       "category": "top",
       "name": "오버핏 반팔 티셔츠",
-      "image_path": "assets/items/tee_oversize_short.webp"
+      "image_path": "assets/items/tee_oversize_short.webp",
+      "pixel": {
+        "shape": "short",
+        "color": "#2B2B2B",
+        "detail": null
+      }
     },
     "sweatshirt": {
       "category": "top",
       "name": "맨투맨",
-      "image_path": "assets/items/sweatshirt.webp"
+      "image_path": "assets/items/sweatshirt.webp",
+      "pixel": {
+        "shape": "long",
+        "color": "#9AA5B1",
+        "detail": null
+      }
     },
     "knit_cable": {
       "category": "top",
       "name": "꽈배기 니트",
-      "image_path": "assets/items/knit_cable.webp"
+      "image_path": "assets/items/knit_cable.webp",
+      "pixel": {
+        "shape": "long",
+        "color": "#E9DCC2",
+        "detail": "knit"
+      }
     },
     "sweatshirt_fleece": {
       "category": "top",
       "name": "기모 맨투맨",
-      "image_path": "assets/items/sweatshirt_fleece.webp"
+      "image_path": "assets/items/sweatshirt_fleece.webp",
+      "pixel": {
+        "shape": "long",
+        "color": "#7A8B6F",
+        "detail": null
+      }
     },
     "blouse_puff_short": {
       "category": "top",
       "name": "퍼프 반팔 블라우스",
-      "image_path": "assets/items/blouse_puff_short.webp"
+      "image_path": "assets/items/blouse_puff_short.webp",
+      "pixel": {
+        "shape": "puff",
+        "color": "#FFE3EC",
+        "detail": null
+      }
     },
     "knit_tee_pastel": {
       "category": "top",
       "name": "파스텔 반팔 니트",
-      "image_path": "assets/items/knit_tee_pastel.webp"
+      "image_path": "assets/items/knit_tee_pastel.webp",
+      "pixel": {
+        "shape": "short",
+        "color": "#CDE7D8",
+        "detail": null
+      }
     },
     "blouse_ribbon": {
       "category": "top",
       "name": "리본 블라우스",
-      "image_path": "assets/items/blouse_ribbon.webp"
+      "image_path": "assets/items/blouse_ribbon.webp",
+      "pixel": {
+        "shape": "long",
+        "color": "#FFFFFF",
+        "detail": "ribbon"
+      }
     },
     "knit_angora": {
       "category": "top",
       "name": "앙고라 니트",
-      "image_path": "assets/items/knit_angora.webp"
+      "image_path": "assets/items/knit_angora.webp",
+      "pixel": {
+        "shape": "long",
+        "color": "#F7D6E0",
+        "detail": "knit"
+      }
     },
     "tee_graphic_oversize": {
       "category": "top",
       "name": "오버핏 그래픽 반팔",
-      "image_path": "assets/items/tee_graphic_oversize.webp"
+      "image_path": "assets/items/tee_graphic_oversize.webp",
+      "pixel": {
+        "shape": "short",
+        "color": "#E9E9E9",
+        "detail": "graphic"
+      }
     },
     "hoodie": {
       "category": "top",
       "name": "오버핏 후드 티",
-      "image_path": "assets/items/hoodie.webp"
+      "image_path": "assets/items/hoodie.webp",
+      "pixel": {
+        "shape": "hood",
+        "color": "#6E7F95",
+        "detail": null
+      }
     },
     "hoodie_fleece": {
       "category": "top",
       "name": "기모 후드 티",
-      "image_path": "assets/items/hoodie_fleece.webp"
+      "image_path": "assets/items/hoodie_fleece.webp",
+      "pixel": {
+        "shape": "hood",
+        "color": "#4F5B48",
+        "detail": null
+      }
     },
     "shorts_linen_beige": {
       "category": "bottom",
       "name": "베이지 린넨 반바지",
-      "image_path": "assets/items/shorts_linen_beige.webp"
+      "image_path": "assets/items/shorts_linen_beige.webp",
+      "pixel": {
+        "shape": "shorts",
+        "color": "#D9C3A0",
+        "detail": null
+      }
     },
     "pants_cotton_beige": {
       "category": "bottom",
       "name": "베이지 면바지",
-      "image_path": "assets/items/pants_cotton_beige.webp"
+      "image_path": "assets/items/pants_cotton_beige.webp",
+      "pixel": {
+        "shape": "pants",
+        "color": "#CDB892",
+        "detail": null
+      }
     },
     "jeans_straight": {
       "category": "bottom",
       "name": "스트레이트 청바지",
-      "image_path": "assets/items/jeans_straight.webp"
+      "image_path": "assets/items/jeans_straight.webp",
+      "pixel": {
+        "shape": "pants",
+        "color": "#4A6FA5",
+        "detail": null
+      }
     },
     "slacks_black": {
       "category": "bottom",
       "name": "블랙 슬랙스",
-      "image_path": "assets/items/slacks_black.webp"
+      "image_path": "assets/items/slacks_black.webp",
+      "pixel": {
+        "shape": "pants",
+        "color": "#2A2A2E",
+        "detail": null
+      }
     },
     "pants_fleece_straight": {
       "category": "bottom",
       "name": "기모 일자 바지",
-      "image_path": "assets/items/pants_fleece_straight.webp"
+      "image_path": "assets/items/pants_fleece_straight.webp",
+      "pixel": {
+        "shape": "pants",
+        "color": "#5A5048",
+        "detail": null
+      }
     },
     "slacks_fleece": {
       "category": "bottom",
       "name": "기모 슬랙스",
-      "image_path": "assets/items/slacks_fleece.webp"
+      "image_path": "assets/items/slacks_fleece.webp",
+      "pixel": {
+        "shape": "pants",
+        "color": "#3A3A40",
+        "detail": null
+      }
     },
     "slacks_cool_wide": {
       "category": "bottom",
       "name": "와이드 쿨 슬랙스",
-      "image_path": "assets/items/slacks_cool_wide.webp"
+      "image_path": "assets/items/slacks_cool_wide.webp",
+      "pixel": {
+        "shape": "wide",
+        "color": "#BFB8AA",
+        "detail": null
+      }
     },
     "slacks_cream": {
       "category": "bottom",
       "name": "크림 슬랙스",
-      "image_path": "assets/items/slacks_cream.webp"
+      "image_path": "assets/items/slacks_cream.webp",
+      "pixel": {
+        "shape": "pants",
+        "color": "#EFE6D2",
+        "detail": null
+      }
     },
     "slacks_wool_gray": {
       "category": "bottom",
       "name": "그레이 울 슬랙스",
-      "image_path": "assets/items/slacks_wool_gray.webp"
+      "image_path": "assets/items/slacks_wool_gray.webp",
+      "pixel": {
+        "shape": "pants",
+        "color": "#7D7F86",
+        "detail": null
+      }
     },
     "shorts_denim": {
       "category": "bottom",
       "name": "데님 반바지",
-      "image_path": "assets/items/shorts_denim.webp"
+      "image_path": "assets/items/shorts_denim.webp",
+      "pixel": {
+        "shape": "shorts",
+        "color": "#6C8FC2",
+        "detail": null
+      }
     },
     "jeans_light": {
       "category": "bottom",
       "name": "연청 데님 팬츠",
-      "image_path": "assets/items/jeans_light.webp"
+      "image_path": "assets/items/jeans_light.webp",
+      "pixel": {
+        "shape": "pants",
+        "color": "#8FB0D9",
+        "detail": null
+      }
     },
     "jeans_wide_light": {
       "category": "bottom",
       "name": "연청 와이드 데님",
-      "image_path": "assets/items/jeans_wide_light.webp"
+      "image_path": "assets/items/jeans_wide_light.webp",
+      "pixel": {
+        "shape": "wide",
+        "color": "#8FB0D9",
+        "detail": null
+      }
     },
     "jeans_raw": {
       "category": "bottom",
       "name": "생지 데님",
-      "image_path": "assets/items/jeans_raw.webp"
+      "image_path": "assets/items/jeans_raw.webp",
+      "pixel": {
+        "shape": "pants",
+        "color": "#2C3E66",
+        "detail": null
+      }
     },
     "jeans_fleece": {
       "category": "bottom",
       "name": "기모 데님",
-      "image_path": "assets/items/jeans_fleece.webp"
+      "image_path": "assets/items/jeans_fleece.webp",
+      "pixel": {
+        "shape": "pants",
+        "color": "#3E5C8C",
+        "detail": null
+      }
     },
     "joggers_fleece": {
       "category": "bottom",
       "name": "기모 조거 팬츠",
-      "image_path": "assets/items/joggers_fleece.webp"
+      "image_path": "assets/items/joggers_fleece.webp",
+      "pixel": {
+        "shape": "joggers",
+        "color": "#5B5F66",
+        "detail": null
+      }
     },
     "skirt_flare_mini": {
       "category": "bottom",
       "name": "플레어 미니스커트",
-      "image_path": "assets/items/skirt_flare_mini.webp"
+      "image_path": "assets/items/skirt_flare_mini.webp",
+      "pixel": {
+        "shape": "skirt_mini",
+        "color": "#F4A7B9",
+        "detail": null
+      }
     },
     "skirt_pleats_long": {
       "category": "bottom",
       "name": "플리츠 롱스커트",
-      "image_path": "assets/items/skirt_pleats_long.webp"
+      "image_path": "assets/items/skirt_pleats_long.webp",
+      "pixel": {
+        "shape": "skirt_long",
+        "color": "#C9B6E4",
+        "detail": null
+      }
     },
     "skirt_flare_midi": {
       "category": "bottom",
       "name": "플레어 미디스커트",
-      "image_path": "assets/items/skirt_flare_midi.webp"
+      "image_path": "assets/items/skirt_flare_midi.webp",
+      "pixel": {
+        "shape": "skirt_midi",
+        "color": "#F2C6C2",
+        "detail": null
+      }
     },
     "skirt_wool_long": {
       "category": "bottom",
       "name": "울 롱스커트",
-      "image_path": "assets/items/skirt_wool_long.webp"
+      "image_path": "assets/items/skirt_wool_long.webp",
+      "pixel": {
+        "shape": "skirt_fit_long",
+        "color": "#8E6F63",
+        "detail": null
+      }
     },
     "skirt_fleece_long": {
       "category": "bottom",
       "name": "기모 롱스커트",
-      "image_path": "assets/items/skirt_fleece_long.webp"
+      "image_path": "assets/items/skirt_fleece_long.webp",
+      "pixel": {
+        "shape": "skirt_long",
+        "color": "#5F4B5A",
+        "detail": null
+      }
     },
     "shorts_nylon_wide": {
       "category": "bottom",
       "name": "나일론 와이드 반바지",
-      "image_path": "assets/items/shorts_nylon_wide.webp"
+      "image_path": "assets/items/shorts_nylon_wide.webp",
+      "pixel": {
+        "shape": "shorts",
+        "color": "#3F4A3C",
+        "detail": null
+      }
     },
     "pants_cargo_wide": {
       "category": "bottom",
       "name": "와이드 카고 팬츠",
-      "image_path": "assets/items/pants_cargo_wide.webp"
+      "image_path": "assets/items/pants_cargo_wide.webp",
+      "pixel": {
+        "shape": "wide",
+        "color": "#7B7A5E",
+        "detail": null
+      }
     },
     "jeans_wide": {
       "category": "bottom",
       "name": "와이드 데님",
-      "image_path": "assets/items/jeans_wide.webp"
+      "image_path": "assets/items/jeans_wide.webp",
+      "pixel": {
+        "shape": "wide",
+        "color": "#4A6FA5",
+        "detail": null
+      }
     },
     "pants_fleece_wide": {
       "category": "bottom",
       "name": "기모 와이드 팬츠",
-      "image_path": "assets/items/pants_fleece_wide.webp"
+      "image_path": "assets/items/pants_fleece_wide.webp",
+      "pixel": {
+        "shape": "wide",
+        "color": "#4A4A50",
+        "detail": null
+      }
     },
     "shirt_white_thin": {
       "category": "outer",
       "name": "얇은 화이트 셔츠",
-      "image_path": "assets/items/shirt_white_thin.webp"
+      "image_path": "assets/items/shirt_white_thin.webp",
+      "pixel": {
+        "shape": "shirt",
+        "color": "#FFFFFF",
+        "detail": null
+      },
+      "as": {
+        "top": {
+          "pixel": {
+            "shape": "long",
+            "color": "#FFFFFF",
+            "detail": "collar"
+          },
+          "reason": "단추를 잠가 셔츠 한 장으로 입어도 산뜻해요."
+        }
+      }
     },
     "cardigan_navy": {
       "category": "outer",
       "name": "네이비 가디건",
-      "image_path": "assets/items/cardigan_navy.webp"
+      "image_path": "assets/items/cardigan_navy.webp",
+      "pixel": {
+        "shape": "cardigan",
+        "color": "#2E3D63",
+        "detail": "buttons"
+      }
     },
     "coat_trench_beige": {
       "category": "outer",
       "name": "베이지 트렌치코트",
-      "image_path": "assets/items/coat_trench_beige.webp"
+      "image_path": "assets/items/coat_trench_beige.webp",
+      "pixel": {
+        "shape": "trench",
+        "color": "#C8A97E",
+        "detail": null
+      }
     },
     "coat_wool_single": {
       "category": "outer",
       "name": "울 싱글 코트",
-      "image_path": "assets/items/coat_wool_single.webp"
+      "image_path": "assets/items/coat_wool_single.webp",
+      "pixel": {
+        "shape": "coat",
+        "color": "#6B5B4E",
+        "detail": "buttons"
+      }
     },
     "padding_long_black": {
       "category": "outer",
       "name": "블랙 롱패딩",
-      "image_path": "assets/items/padding_long_black.webp"
+      "image_path": "assets/items/padding_long_black.webp",
+      "pixel": {
+        "shape": "padding_long",
+        "color": "#26262B",
+        "detail": null
+      }
     },
     "jacket_tailored_thin": {
       "category": "outer",
       "name": "얇은 테일러드 재킷",
-      "image_path": "assets/items/jacket_tailored_thin.webp"
+      "image_path": "assets/items/jacket_tailored_thin.webp",
+      "pixel": {
+        "shape": "jacket",
+        "color": "#3D4452",
+        "detail": "buttons"
+      }
     },
     "coat_long_charcoal": {
       "category": "outer",
       "name": "차콜 롱코트",
-      "image_path": "assets/items/coat_long_charcoal.webp"
+      "image_path": "assets/items/coat_long_charcoal.webp",
+      "pixel": {
+        "shape": "coat",
+        "color": "#3A3B40",
+        "detail": null
+      }
     },
     "padding_long_matte": {
       "category": "outer",
       "name": "무광 롱 다운코트",
-      "image_path": "assets/items/padding_long_matte.webp"
+      "image_path": "assets/items/padding_long_matte.webp",
+      "pixel": {
+        "shape": "padding_long",
+        "color": "#4B4F45",
+        "detail": null
+      }
     },
     "jacket_denim": {
       "category": "outer",
       "name": "데님 재킷",
-      "image_path": "assets/items/jacket_denim.webp"
+      "image_path": "assets/items/jacket_denim.webp",
+      "pixel": {
+        "shape": "jacket",
+        "color": "#5D80B5",
+        "detail": "buttons"
+      }
     },
     "jacket_work": {
       "category": "outer",
       "name": "워크 재킷",
-      "image_path": "assets/items/jacket_work.webp"
+      "image_path": "assets/items/jacket_work.webp",
+      "pixel": {
+        "shape": "jacket",
+        "color": "#9C7A4D",
+        "detail": null
+      }
     },
     "coat_duffle": {
       "category": "outer",
       "name": "더플코트",
-      "image_path": "assets/items/coat_duffle.webp"
+      "image_path": "assets/items/coat_duffle.webp",
+      "pixel": {
+        "shape": "coat",
+        "color": "#A7845C",
+        "detail": "toggle"
+      }
     },
     "padding_short": {
       "category": "outer",
       "name": "숏패딩",
-      "image_path": "assets/items/padding_short.webp"
+      "image_path": "assets/items/padding_short.webp",
+      "pixel": {
+        "shape": "padding_short",
+        "color": "#E2E2E2",
+        "detail": null
+      }
     },
     "cardigan_summer": {
       "category": "outer",
       "name": "얇은 여름 가디건",
-      "image_path": "assets/items/cardigan_summer.webp"
+      "image_path": "assets/items/cardigan_summer.webp",
+      "pixel": {
+        "shape": "cardigan",
+        "color": "#F5F1E6",
+        "detail": "buttons"
+      }
     },
     "cardigan_pastel": {
       "category": "outer",
       "name": "파스텔 가디건",
-      "image_path": "assets/items/cardigan_pastel.webp"
+      "image_path": "assets/items/cardigan_pastel.webp",
+      "pixel": {
+        "shape": "cardigan",
+        "color": "#F9D3E0",
+        "detail": "buttons"
+      }
     },
     "jacket_tweed": {
       "category": "outer",
       "name": "트위드 재킷",
-      "image_path": "assets/items/jacket_tweed.webp"
+      "image_path": "assets/items/jacket_tweed.webp",
+      "pixel": {
+        "shape": "jacket",
+        "color": "#E9DCCB",
+        "detail": "buttons"
+      }
     },
     "coat_wool_pink": {
       "category": "outer",
       "name": "핑크 울 코트",
-      "image_path": "assets/items/coat_wool_pink.webp"
+      "image_path": "assets/items/coat_wool_pink.webp",
+      "pixel": {
+        "shape": "coat",
+        "color": "#F2B8C6",
+        "detail": "buttons"
+      }
     },
     "padding_long_furcollar": {
       "category": "outer",
       "name": "퍼 칼라 롱패딩",
-      "image_path": "assets/items/padding_long_furcollar.webp"
+      "image_path": "assets/items/padding_long_furcollar.webp",
+      "pixel": {
+        "shape": "padding_long",
+        "color": "#EDE6DA",
+        "detail": "fur"
+      }
     },
     "jacket_coach": {
       "category": "outer",
       "name": "코치 재킷",
-      "image_path": "assets/items/jacket_coach.webp"
+      "image_path": "assets/items/jacket_coach.webp",
+      "pixel": {
+        "shape": "jacket",
+        "color": "#26282E",
+        "detail": null
+      }
     },
     "jacket_varsity": {
       "category": "outer",
       "name": "바시티 재킷",
-      "image_path": "assets/items/jacket_varsity.webp"
+      "image_path": "assets/items/jacket_varsity.webp",
+      "pixel": {
+        "shape": "jacket",
+        "color": "#3B4E7A",
+        "detail": "varsity"
+      }
     },
     "jacket_ma1": {
       "category": "outer",
       "name": "오버핏 MA-1 항공 점퍼",
-      "image_path": "assets/items/jacket_ma1.webp"
+      "image_path": "assets/items/jacket_ma1.webp",
+      "pixel": {
+        "shape": "jacket",
+        "color": "#556B4A",
+        "detail": null
+      }
     },
     "padding_puffer": {
       "category": "outer",
       "name": "오버핏 푸퍼 패딩",
-      "image_path": "assets/items/padding_puffer.webp"
+      "image_path": "assets/items/padding_puffer.webp",
+      "pixel": {
+        "shape": "padding_short",
+        "color": "#1F2124",
+        "detail": null
+      }
+    },
+    "shirt_oxford": {
+      "category": "top",
+      "name": "옥스퍼드 셔츠",
+      "image_path": "assets/items/shirt_oxford.webp",
+      "pixel": {
+        "shape": "long",
+        "color": "#DCE6F2",
+        "detail": "collar"
+      }
+    },
+    "pants_chino": {
+      "category": "bottom",
+      "name": "치노 팬츠",
+      "image_path": "assets/items/pants_chino.webp",
+      "pixel": {
+        "shape": "pants",
+        "color": "#B59E7A",
+        "detail": null
+      }
+    },
+    "shorts_chino": {
+      "category": "bottom",
+      "name": "치노 반바지",
+      "image_path": "assets/items/shorts_chino.webp",
+      "pixel": {
+        "shape": "shorts",
+        "color": "#A8956F",
+        "detail": null
+      }
+    },
+    "jacket_blazer_navy": {
+      "category": "outer",
+      "name": "네이비 블레이저",
+      "image_path": "assets/items/jacket_blazer_navy.webp",
+      "pixel": {
+        "shape": "jacket",
+        "color": "#24304A",
+        "detail": "buttons"
+      }
+    },
+    "coat_chester_camel": {
+      "category": "outer",
+      "name": "카멜 체스터 코트",
+      "image_path": "assets/items/coat_chester_camel.webp",
+      "pixel": {
+        "shape": "coat",
+        "color": "#B08A5E",
+        "detail": "buttons"
+      }
+    },
+    "jacket_leather": {
+      "category": "outer",
+      "name": "가죽 자켓",
+      "image_path": "assets/items/jacket_leather.webp",
+      "pixel": {
+        "shape": "jacket",
+        "color": "#2B2523",
+        "detail": "leather"
+      }
+    },
+    "padding_light_short": {
+      "category": "outer",
+      "name": "숏 경량 패딩",
+      "image_path": "assets/items/padding_light_short.webp",
+      "pixel": {
+        "shape": "padding_short",
+        "color": "#3E4A5C",
+        "detail": "light"
+      }
+    },
+    "dress_office": {
+      "category": "dress",
+      "name": "오피스 H라인 원피스",
+      "image_path": "assets/items/dress_office.webp",
+      "pixel": {
+        "color": "#2E3D63",
+        "onepiece": true,
+        "top": {
+          "shape": "long",
+          "detail": "collar"
+        },
+        "bottom": {
+          "shape": "skirt_fit_midi",
+          "detail": null
+        }
+      }
+    },
+    "dress_guest": {
+      "category": "dress",
+      "name": "하객룩 플레어 원피스",
+      "image_path": "assets/items/dress_guest.webp",
+      "pixel": {
+        "color": "#E8C7D0",
+        "onepiece": true,
+        "top": {
+          "shape": "puff",
+          "detail": "ribbon"
+        },
+        "bottom": {
+          "shape": "skirt_midi",
+          "detail": null
+        }
+      }
+    },
+    "set_tweed": {
+      "category": "dress",
+      "name": "트위드 자켓 스커트 세트",
+      "image_path": "assets/items/set_tweed.webp",
+      "pixel": {
+        "color": "#E9DCCB",
+        "onepiece": false,
+        "top": {
+          "shape": "long",
+          "detail": "tweed"
+        },
+        "bottom": {
+          "shape": "skirt_mini",
+          "detail": "tweed"
+        }
+      }
+    },
+    "dress_date": {
+      "category": "dress",
+      "name": "데이트룩 미니 원피스",
+      "image_path": "assets/items/dress_date.webp",
+      "pixel": {
+        "color": "#F4A7B9",
+        "onepiece": true,
+        "top": {
+          "shape": "puff",
+          "detail": null
+        },
+        "bottom": {
+          "shape": "skirt_mini",
+          "detail": null
+        }
+      }
+    },
+    "dress_knit": {
+      "category": "dress",
+      "name": "롱 니트 원피스",
+      "image_path": "assets/items/dress_knit.webp",
+      "pixel": {
+        "color": "#B59B85",
+        "onepiece": true,
+        "top": {
+          "shape": "long",
+          "detail": "knit"
+        },
+        "bottom": {
+          "shape": "skirt_fit_long",
+          "detail": "knit"
+        }
+      }
+    },
+    "dress_resort": {
+      "category": "dress",
+      "name": "리조트 맥시 원피스",
+      "image_path": "assets/items/dress_resort.webp",
+      "pixel": {
+        "color": "#F2C14E",
+        "onepiece": true,
+        "top": {
+          "shape": "sleeveless",
+          "detail": null
+        },
+        "bottom": {
+          "shape": "skirt_long",
+          "detail": null
+        }
+      }
+    },
+    "set_wide": {
+      "category": "dress",
+      "name": "와이드 팬츠 셋업",
+      "image_path": "assets/items/set_wide.webp",
+      "pixel": {
+        "color": "#D9C3A0",
+        "onepiece": false,
+        "top": {
+          "shape": "long",
+          "detail": "collar"
+        },
+        "bottom": {
+          "shape": "wide",
+          "detail": null
+        }
+      }
+    },
+    "set_suit": {
+      "category": "dress",
+      "name": "수트 셋업",
+      "image_path": "assets/items/set_suit.webp",
+      "pixel": {
+        "color": "#2F3540",
+        "onepiece": false,
+        "top": {
+          "shape": "long",
+          "detail": "suit"
+        },
+        "bottom": {
+          "shape": "pants",
+          "detail": null
+        }
+      }
+    },
+    "set_linen": {
+      "category": "dress",
+      "name": "린넨 셔츠 반바지 셋업",
+      "image_path": "assets/items/set_linen.webp",
+      "pixel": {
+        "color": "#EDE6D6",
+        "onepiece": false,
+        "top": {
+          "shape": "short",
+          "detail": "collar"
+        },
+        "bottom": {
+          "shape": "shorts",
+          "detail": null
+        }
+      }
+    },
+    "set_hawaiian": {
+      "category": "dress",
+      "name": "하와이안 리조트 셋업",
+      "image_path": "assets/items/set_hawaiian.webp",
+      "pixel": {
+        "color": "#3FA7A0",
+        "onepiece": false,
+        "top": {
+          "shape": "short",
+          "detail": "floral"
+        },
+        "bottom": {
+          "shape": "shorts",
+          "detail": null
+        }
+      }
+    },
+    "set_track": {
+      "category": "dress",
+      "name": "트레이닝 셋업",
+      "image_path": "assets/items/set_track.webp",
+      "pixel": {
+        "color": "#3B4E7A",
+        "onepiece": false,
+        "top": {
+          "shape": "long",
+          "detail": "zip"
+        },
+        "bottom": {
+          "shape": "joggers",
+          "detail": "stripe_side"
+        }
+      }
+    },
+    "set_knit": {
+      "category": "dress",
+      "name": "니트 셋업",
+      "image_path": "assets/items/set_knit.webp",
+      "pixel": {
+        "color": "#8C8C84",
+        "onepiece": false,
+        "top": {
+          "shape": "long",
+          "detail": "knit"
+        },
+        "bottom": {
+          "shape": "pants",
+          "detail": null
+        }
+      }
+    },
+    "top_sleeveless": {
+      "category": "top",
+      "name": "민소매 탑",
+      "image_path": "assets/items/top_sleeveless.webp",
+      "pixel": {
+        "shape": "sleeveless",
+        "color": "#FFFFFF",
+        "detail": null
+      }
+    },
+    "shirt_hawaiian": {
+      "category": "top",
+      "name": "하와이안 셔츠",
+      "image_path": "assets/items/shirt_hawaiian.webp",
+      "pixel": {
+        "shape": "short",
+        "color": "#3FA7A0",
+        "detail": "floral"
+      }
+    },
+    "shorts_board": {
+      "category": "bottom",
+      "name": "보드 반바지",
+      "image_path": "assets/items/shorts_board.webp",
+      "pixel": {
+        "shape": "shorts",
+        "color": "#2E86AB",
+        "detail": null
+      }
+    },
+    "padding_arctic": {
+      "category": "outer",
+      "name": "헤비 다운 파카",
+      "image_path": "assets/items/padding_arctic.webp",
+      "pixel": {
+        "shape": "padding_long",
+        "color": "#5A2E2E",
+        "detail": "fur"
+      }
     }
   },
   "outfits": [
@@ -742,7 +1510,10 @@
       "outer": null,
       "accessories": [],
       "description": "퍼프 블라우스와 플레어 스커트, 여름의 러블리 정석.",
-      "image_path": "assets/outfits/lovely_T01_01.webp"
+      "image_path": "assets/outfits/lovely_T01_01.webp",
+      "genders": [
+        "female"
+      ]
     },
     {
       "outfit_id": "lovely_T02_01",
@@ -762,7 +1533,10 @@
       },
       "accessories": [],
       "description": "파스텔 니트와 플리츠 스커트, 은은한 러블리 무드.",
-      "image_path": "assets/outfits/lovely_T02_01.webp"
+      "image_path": "assets/outfits/lovely_T02_01.webp",
+      "genders": [
+        "female"
+      ]
     },
     {
       "outfit_id": "lovely_T03_01",
@@ -782,7 +1556,10 @@
       },
       "accessories": [],
       "description": "리본 블라우스에 가디건, 부드럽고 화사한 간절기 룩.",
-      "image_path": "assets/outfits/lovely_T03_01.webp"
+      "image_path": "assets/outfits/lovely_T03_01.webp",
+      "genders": [
+        "female"
+      ]
     },
     {
       "outfit_id": "lovely_T04_01",
@@ -802,7 +1579,10 @@
       },
       "accessories": [],
       "description": "앙고라 니트와 트위드 재킷, 단정하면서도 사랑스럽게.",
-      "image_path": "assets/outfits/lovely_T04_01.webp"
+      "image_path": "assets/outfits/lovely_T04_01.webp",
+      "genders": [
+        "female"
+      ]
     },
     {
       "outfit_id": "lovely_T05_01",
@@ -824,7 +1604,10 @@
         "기모 스타킹"
       ],
       "description": "핑크 코트와 롱스커트, 추운 날에도 화사하게.",
-      "image_path": "assets/outfits/lovely_T05_01.webp"
+      "image_path": "assets/outfits/lovely_T05_01.webp",
+      "genders": [
+        "female"
+      ]
     },
     {
       "outfit_id": "lovely_T06_01",
@@ -848,7 +1631,150 @@
         "기모 스타킹"
       ],
       "description": "퍼 칼라 패딩으로 완성하는 포근한 겨울 러블리.",
-      "image_path": "assets/outfits/lovely_T06_01.webp"
+      "image_path": "assets/outfits/lovely_T06_01.webp",
+      "genders": [
+        "female"
+      ]
+    },
+    {
+      "outfit_id": "dandy_T01_01",
+      "style": "dandy",
+      "temperature_code": "T01",
+      "genders": [
+        "male"
+      ],
+      "top": {
+        "item_id": "shirt_linen_short",
+        "reason": "깃이 있는 린넨이라 더워도 단정해 보여요."
+      },
+      "bottom": {
+        "item_id": "shorts_chino",
+        "reason": "무릎 위 치노 반바지로 시원하면서 깔끔하게."
+      },
+      "outer": null,
+      "accessories": [],
+      "description": "린넨 셔츠에 치노 반바지, 더운 날의 단정한 정답.",
+      "image_path": "assets/outfits/dandy_T01_01.webp"
+    },
+    {
+      "outfit_id": "dandy_T02_01",
+      "style": "dandy",
+      "temperature_code": "T02",
+      "genders": [
+        "male"
+      ],
+      "top": {
+        "item_id": "polo_knit_short",
+        "reason": "니트 폴로 하나로 셔츠보다 편하고 티보다 단정해요."
+      },
+      "bottom": {
+        "item_id": "slacks_cream",
+        "reason": "밝은 슬랙스로 여름 분위기를 살려요."
+      },
+      "outer": {
+        "item_id": "jacket_tailored_thin",
+        "reason": "냉방이 센 실내에서 걸치기 좋은 얇은 재킷이에요."
+      },
+      "accessories": [],
+      "description": "니트 폴로와 크림 슬랙스, 얇은 재킷으로 마무리.",
+      "image_path": "assets/outfits/dandy_T02_01.webp"
+    },
+    {
+      "outfit_id": "dandy_T03_01",
+      "style": "dandy",
+      "temperature_code": "T03",
+      "genders": [
+        "male"
+      ],
+      "top": {
+        "item_id": "shirt_oxford",
+        "reason": "도톰한 옥스퍼드 셔츠 한 장이 딱 맞는 기온이에요."
+      },
+      "bottom": {
+        "item_id": "pants_chino",
+        "reason": "치노 팬츠는 셔츠와 블레이저 어디에나 어울려요."
+      },
+      "outer": {
+        "item_id": "jacket_blazer_navy",
+        "reason": "아침저녁엔 블레이저를 걸치면 딱이에요."
+      },
+      "accessories": [],
+      "description": "옥스퍼드 셔츠에 네이비 블레이저, 댄디의 기본.",
+      "image_path": "assets/outfits/dandy_T03_01.webp"
+    },
+    {
+      "outfit_id": "dandy_T04_01",
+      "style": "dandy",
+      "temperature_code": "T04",
+      "genders": [
+        "male"
+      ],
+      "top": {
+        "item_id": "shirt_oxford",
+        "reason": "셔츠 위에 코트를 걸치면 간절기 온도에 맞아요."
+      },
+      "bottom": {
+        "item_id": "slacks_wool_gray",
+        "reason": "울 슬랙스가 쌀쌀한 바람을 막아 줘요."
+      },
+      "outer": {
+        "item_id": "coat_trench_beige",
+        "reason": "트렌치코트로 바람과 분위기를 함께 잡아요."
+      },
+      "accessories": [],
+      "description": "셔츠와 그레이 슬랙스에 트렌치코트, 차분한 간절기 룩.",
+      "image_path": "assets/outfits/dandy_T04_01.webp"
+    },
+    {
+      "outfit_id": "dandy_T05_01",
+      "style": "dandy",
+      "temperature_code": "T05",
+      "genders": [
+        "male"
+      ],
+      "top": {
+        "item_id": "knit_turtleneck",
+        "reason": "터틀넥이 목까지 따뜻하게 감싸 줘요."
+      },
+      "bottom": {
+        "item_id": "slacks_black",
+        "reason": "블랙 슬랙스로 코트 실루엣을 길게 이어요."
+      },
+      "outer": {
+        "item_id": "coat_chester_camel",
+        "reason": "카멜 체스터 코트는 추운 날 댄디룩의 핵심이에요."
+      },
+      "accessories": [
+        "캐시미어 머플러"
+      ],
+      "description": "터틀넥에 카멜 코트, 추워도 단정함은 그대로.",
+      "image_path": "assets/outfits/dandy_T05_01.webp"
+    },
+    {
+      "outfit_id": "dandy_T06_01",
+      "style": "dandy",
+      "temperature_code": "T06",
+      "genders": [
+        "male"
+      ],
+      "top": {
+        "item_id": "knit_turtleneck_thick",
+        "reason": "두꺼운 터틀넥으로 한겨울 바람을 막아요."
+      },
+      "bottom": {
+        "item_id": "slacks_fleece",
+        "reason": "기모 슬랙스라 핏은 살리고 추위는 막아요."
+      },
+      "outer": {
+        "item_id": "padding_long_matte",
+        "reason": "무광 다운코트는 정장 느낌을 해치지 않아요."
+      },
+      "accessories": [
+        "캐시미어 머플러",
+        "가죽 장갑"
+      ],
+      "description": "다운코트에 머플러와 장갑, 한파에도 흐트러지지 않게.",
+      "image_path": "assets/outfits/dandy_T06_01.webp"
     },
     {
       "outfit_id": "street_T01_01",
@@ -968,6 +1894,204 @@
       ],
       "description": "푸퍼 패딩에 와이드 팬츠, 추위도 스타일로 버티기.",
       "image_path": "assets/outfits/street_T06_01.webp"
+    }
+  ],
+  "closet_extras": [
+    {
+      "item_id": "jacket_leather",
+      "codes": [
+        "T03",
+        "T04"
+      ],
+      "reason": "바람을 잘 막고 어떤 하의에도 무게감을 더해 줘요."
+    },
+    {
+      "item_id": "padding_light_short",
+      "codes": [
+        "T04",
+        "T05"
+      ],
+      "reason": "가볍고 얇은데 보온이 좋아 간절기 겉옷으로 딱이에요."
+    },
+    {
+      "item_id": "dress_office",
+      "codes": [
+        "T03",
+        "T04"
+      ],
+      "reason": "셔츠 칼라에 H라인이라 회의도 퇴근 후 약속도 단정해요.",
+      "genders": [
+        "female"
+      ]
+    },
+    {
+      "item_id": "dress_guest",
+      "codes": [
+        "T02",
+        "T03"
+      ],
+      "reason": "은은한 색과 리본이 축하 자리에 튀지 않게 화사해요.",
+      "genders": [
+        "female"
+      ]
+    },
+    {
+      "item_id": "set_tweed",
+      "codes": [
+        "T03",
+        "T04"
+      ],
+      "reason": "위아래를 맞춘 트위드라 이 한 벌로 코디가 끝나요.",
+      "genders": [
+        "female"
+      ]
+    },
+    {
+      "item_id": "dress_date",
+      "codes": [
+        "T01",
+        "T02",
+        "T03"
+      ],
+      "reason": "퍼프 소매와 미니 기장이 사랑스러운 데이트룩이에요.",
+      "genders": [
+        "female"
+      ]
+    },
+    {
+      "item_id": "dress_knit",
+      "codes": [
+        "T04",
+        "T05",
+        "T06"
+      ],
+      "reason": "발목까지 오는 니트라 추운 날에도 포근하게 원피스를 입어요.",
+      "genders": [
+        "female"
+      ]
+    },
+    {
+      "item_id": "dress_resort",
+      "codes": [
+        "T01"
+      ],
+      "reason": "바람이 잘 통하는 민소매 맥시 기장, 휴양지 사진에 딱이에요.",
+      "genders": [
+        "female"
+      ]
+    },
+    {
+      "item_id": "set_wide",
+      "codes": [
+        "T03",
+        "T04"
+      ],
+      "reason": "셔츠와 와이드 팬츠를 한 색으로 맞춰 편하면서도 갖춰 입은 느낌이에요.",
+      "genders": [
+        "female"
+      ]
+    },
+    {
+      "item_id": "set_suit",
+      "codes": [
+        "T03",
+        "T04",
+        "T05"
+      ],
+      "reason": "같은 원단 재킷과 바지라 오피스·하객룩 어디든 통해요.",
+      "genders": [
+        "male"
+      ]
+    },
+    {
+      "item_id": "set_linen",
+      "codes": [
+        "T01",
+        "T02"
+      ],
+      "reason": "통풍 좋은 린넨 한 벌, 더운 나라 여행에 제일 편해요.",
+      "genders": [
+        "male"
+      ]
+    },
+    {
+      "item_id": "set_hawaiian",
+      "codes": [
+        "T01"
+      ],
+      "reason": "꽃무늬 셔츠와 반바지를 맞춘 휴양지 정석 셋업이에요.",
+      "genders": [
+        "male"
+      ]
+    },
+    {
+      "item_id": "set_track",
+      "codes": [
+        "T03",
+        "T04",
+        "T05"
+      ],
+      "reason": "집업과 조거를 맞춰 입어 활동하기 편해요.",
+      "genders": [
+        "male",
+        "female"
+      ]
+    },
+    {
+      "item_id": "set_knit",
+      "codes": [
+        "T04",
+        "T05",
+        "T06"
+      ],
+      "reason": "부드러운 니트 위아래라 추운 날 실내외 모두 편해요.",
+      "genders": [
+        "male"
+      ]
+    },
+    {
+      "item_id": "top_sleeveless",
+      "codes": [
+        "T01"
+      ],
+      "reason": "한낮 더위엔 어깨가 시원한 민소매가 좋아요.",
+      "genders": [
+        "female"
+      ]
+    },
+    {
+      "item_id": "shirt_hawaiian",
+      "codes": [
+        "T01",
+        "T02"
+      ],
+      "reason": "휴양지 분위기를 한 번에 내는 꽃무늬 셔츠예요.",
+      "genders": [
+        "female",
+        "male"
+      ]
+    },
+    {
+      "item_id": "shorts_board",
+      "codes": [
+        "T01"
+      ],
+      "reason": "물에 젖어도 금방 마르는 휴양지 반바지예요.",
+      "genders": [
+        "female",
+        "male"
+      ]
+    },
+    {
+      "item_id": "padding_arctic",
+      "codes": [
+        "T06"
+      ],
+      "reason": "영하 10도 아래 혹한 도시에서도 버티는 두꺼운 다운이에요.",
+      "genders": [
+        "female",
+        "male"
+      ]
     }
   ]
 }
