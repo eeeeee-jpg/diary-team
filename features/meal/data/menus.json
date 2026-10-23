@@ -1,0 +1,1271 @@
+[
+ {
+  "name": "김치찌개",
+  "tags": [
+   "soup",
+   "spicy",
+   "rice"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "된장찌개",
+  "tags": [
+   "soup",
+   "rice"
+  ],
+  "slots": [
+   "breakfast",
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "순두부찌개",
+  "tags": [
+   "soup",
+   "spicy",
+   "rice"
+  ],
+  "slots": [
+   "breakfast",
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "부대찌개",
+  "tags": [
+   "soup",
+   "spicy",
+   "meat"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "갈비탕",
+  "tags": [
+   "soup",
+   "meat",
+   "rice"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "설렁탕",
+  "tags": [
+   "soup",
+   "meat",
+   "rice"
+  ],
+  "slots": [
+   "breakfast",
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "곰탕",
+  "tags": [
+   "soup",
+   "meat",
+   "rice"
+  ],
+  "slots": [
+   "breakfast",
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "육개장",
+  "tags": [
+   "soup",
+   "spicy",
+   "meat",
+   "rice"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "삼계탕",
+  "tags": [
+   "soup",
+   "meat",
+   "rice"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "감자탕",
+  "tags": [
+   "soup",
+   "spicy",
+   "meat"
+  ],
+  "slots": [
+   "dinner"
+  ]
+ },
+ {
+  "name": "해장국",
+  "tags": [
+   "soup",
+   "spicy",
+   "rice"
+  ],
+  "slots": [
+   "breakfast",
+   "lunch"
+  ]
+ },
+ {
+  "name": "콩나물국밥",
+  "tags": [
+   "soup",
+   "rice",
+   "light"
+  ],
+  "slots": [
+   "breakfast",
+   "lunch"
+  ]
+ },
+ {
+  "name": "순대국밥",
+  "tags": [
+   "soup",
+   "meat",
+   "rice"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "돼지국밥",
+  "tags": [
+   "soup",
+   "meat",
+   "rice"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "미역국",
+  "tags": [
+   "soup",
+   "light",
+   "rice"
+  ],
+  "slots": [
+   "breakfast",
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "북엇국",
+  "tags": [
+   "soup",
+   "light",
+   "rice"
+  ],
+  "slots": [
+   "breakfast",
+   "lunch"
+  ]
+ },
+ {
+  "name": "떡국",
+  "tags": [
+   "soup",
+   "light"
+  ],
+  "slots": [
+   "breakfast",
+   "lunch"
+  ]
+ },
+ {
+  "name": "만둣국",
+  "tags": [
+   "soup",
+   "light"
+  ],
+  "slots": [
+   "breakfast",
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "추어탕",
+  "tags": [
+   "soup",
+   "rice"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "매운탕",
+  "tags": [
+   "soup",
+   "spicy",
+   "seafood"
+  ],
+  "slots": [
+   "dinner"
+  ]
+ },
+ {
+  "name": "전골",
+  "tags": [
+   "soup",
+   "meat"
+  ],
+  "slots": [
+   "dinner"
+  ]
+ },
+ {
+  "name": "샤브샤브",
+  "tags": [
+   "soup",
+   "meat",
+   "light"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "닭곰탕",
+  "tags": [
+   "soup",
+   "meat",
+   "rice"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "어묵탕",
+  "tags": [
+   "soup",
+   "light"
+  ],
+  "slots": [
+   "dinner"
+  ]
+ },
+ {
+  "name": "칼국수",
+  "tags": [
+   "soup",
+   "noodle"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "잔치국수",
+  "tags": [
+   "soup",
+   "noodle",
+   "light"
+  ],
+  "slots": [
+   "breakfast",
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "라멘",
+  "tags": [
+   "soup",
+   "noodle",
+   "meat"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "우동",
+  "tags": [
+   "soup",
+   "noodle"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "쌀국수",
+  "tags": [
+   "soup",
+   "noodle",
+   "light"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "짬뽕",
+  "tags": [
+   "soup",
+   "noodle",
+   "spicy",
+   "seafood"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "수제비",
+  "tags": [
+   "soup",
+   "noodle"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "짜장면",
+  "tags": [
+   "noodle"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "비빔국수",
+  "tags": [
+   "noodle",
+   "spicy",
+   "cold"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "냉면",
+  "tags": [
+   "noodle",
+   "cold"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "물냉면",
+  "tags": [
+   "noodle",
+   "cold",
+   "light"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "비빔냉면",
+  "tags": [
+   "noodle",
+   "cold",
+   "spicy"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "콩국수",
+  "tags": [
+   "noodle",
+   "cold",
+   "light"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "메밀소바",
+  "tags": [
+   "noodle",
+   "cold",
+   "light"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "쫄면",
+  "tags": [
+   "noodle",
+   "cold",
+   "spicy"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "파스타",
+  "tags": [
+   "noodle",
+   "western"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "볶음우동",
+  "tags": [
+   "noodle"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "팟타이",
+  "tags": [
+   "noodle"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "막국수",
+  "tags": [
+   "noodle",
+   "cold"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "냉모밀",
+  "tags": [
+   "noodle",
+   "cold",
+   "light"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "비빔밥",
+  "tags": [
+   "rice",
+   "light"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "김밥",
+  "tags": [
+   "rice",
+   "light"
+  ],
+  "slots": [
+   "breakfast",
+   "lunch"
+  ]
+ },
+ {
+  "name": "제육볶음",
+  "tags": [
+   "rice",
+   "spicy",
+   "meat"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "불고기덮밥",
+  "tags": [
+   "rice",
+   "meat"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "돈가스",
+  "tags": [
+   "rice",
+   "fried",
+   "meat"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "카레라이스",
+  "tags": [
+   "rice"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "오므라이스",
+  "tags": [
+   "rice",
+   "western"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "볶음밥",
+  "tags": [
+   "rice"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "낙지볶음",
+  "tags": [
+   "rice",
+   "spicy",
+   "seafood"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "쭈꾸미볶음",
+  "tags": [
+   "rice",
+   "spicy",
+   "seafood"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "회덮밥",
+  "tags": [
+   "rice",
+   "cold",
+   "seafood"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "초밥",
+  "tags": [
+   "rice",
+   "cold",
+   "seafood"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "규동",
+  "tags": [
+   "rice",
+   "meat"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "치킨마요덮밥",
+  "tags": [
+   "rice",
+   "fried"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "닭갈비",
+  "tags": [
+   "rice",
+   "spicy",
+   "meat"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "보쌈정식",
+  "tags": [
+   "rice",
+   "meat"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "생선구이정식",
+  "tags": [
+   "rice",
+   "seafood"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "쌈밥",
+  "tags": [
+   "rice",
+   "light",
+   "meat"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "죽",
+  "tags": [
+   "light",
+   "soup"
+  ],
+  "slots": [
+   "breakfast"
+  ]
+ },
+ {
+  "name": "전복죽",
+  "tags": [
+   "light",
+   "soup",
+   "seafood"
+  ],
+  "slots": [
+   "breakfast"
+  ]
+ },
+ {
+  "name": "주먹밥",
+  "tags": [
+   "rice",
+   "light"
+  ],
+  "slots": [
+   "breakfast"
+  ]
+ },
+ {
+  "name": "계란밥",
+  "tags": [
+   "rice",
+   "light"
+  ],
+  "slots": [
+   "breakfast"
+  ]
+ },
+ {
+  "name": "한식 백반",
+  "tags": [
+   "rice"
+  ],
+  "slots": [
+   "breakfast",
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "덮밥",
+  "tags": [
+   "rice"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "삼겹살",
+  "tags": [
+   "meat"
+  ],
+  "slots": [
+   "dinner"
+  ]
+ },
+ {
+  "name": "갈비구이",
+  "tags": [
+   "meat"
+  ],
+  "slots": [
+   "dinner"
+  ]
+ },
+ {
+  "name": "곱창",
+  "tags": [
+   "meat",
+   "spicy"
+  ],
+  "slots": [
+   "dinner"
+  ]
+ },
+ {
+  "name": "치킨",
+  "tags": [
+   "fried",
+   "meat"
+  ],
+  "slots": [
+   "dinner"
+  ]
+ },
+ {
+  "name": "족발",
+  "tags": [
+   "meat"
+  ],
+  "slots": [
+   "dinner"
+  ]
+ },
+ {
+  "name": "보쌈",
+  "tags": [
+   "meat"
+  ],
+  "slots": [
+   "dinner"
+  ]
+ },
+ {
+  "name": "스테이크",
+  "tags": [
+   "western",
+   "meat"
+  ],
+  "slots": [
+   "dinner"
+  ]
+ },
+ {
+  "name": "수육",
+  "tags": [
+   "meat"
+  ],
+  "slots": [
+   "dinner"
+  ]
+ },
+ {
+  "name": "오리구이",
+  "tags": [
+   "meat"
+  ],
+  "slots": [
+   "dinner"
+  ]
+ },
+ {
+  "name": "양꼬치",
+  "tags": [
+   "meat"
+  ],
+  "slots": [
+   "dinner"
+  ]
+ },
+ {
+  "name": "샐러드",
+  "tags": [
+   "light",
+   "cold",
+   "western"
+  ],
+  "slots": [
+   "breakfast",
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "샌드위치",
+  "tags": [
+   "light",
+   "western",
+   "bread"
+  ],
+  "slots": [
+   "breakfast",
+   "lunch"
+  ]
+ },
+ {
+  "name": "햄버거",
+  "tags": [
+   "fried",
+   "western",
+   "bread"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "피자",
+  "tags": [
+   "western",
+   "bread"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "리조또",
+  "tags": [
+   "rice",
+   "western"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "포케",
+  "tags": [
+   "rice",
+   "cold",
+   "light",
+   "seafood"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "샐러드 파스타",
+  "tags": [
+   "light",
+   "cold",
+   "noodle",
+   "western"
+  ],
+  "slots": [
+   "lunch"
+  ]
+ },
+ {
+  "name": "토스트",
+  "tags": [
+   "bread",
+   "light"
+  ],
+  "slots": [
+   "breakfast"
+  ]
+ },
+ {
+  "name": "브런치 플레이트",
+  "tags": [
+   "western",
+   "bread",
+   "light"
+  ],
+  "slots": [
+   "breakfast"
+  ]
+ },
+ {
+  "name": "그릭요거트볼",
+  "tags": [
+   "light",
+   "cold"
+  ],
+  "slots": [
+   "breakfast"
+  ]
+ },
+ {
+  "name": "오트밀",
+  "tags": [
+   "light"
+  ],
+  "slots": [
+   "breakfast"
+  ]
+ },
+ {
+  "name": "계란 샌드위치",
+  "tags": [
+   "bread",
+   "light"
+  ],
+  "slots": [
+   "breakfast"
+  ]
+ },
+ {
+  "name": "에그 베네딕트",
+  "tags": [
+   "western",
+   "bread"
+  ],
+  "slots": [
+   "breakfast"
+  ]
+ },
+ {
+  "name": "시리얼",
+  "tags": [
+   "light",
+   "cold"
+  ],
+  "slots": [
+   "breakfast"
+  ]
+ },
+ {
+  "name": "과일 샐러드",
+  "tags": [
+   "light",
+   "cold"
+  ],
+  "slots": [
+   "breakfast"
+  ]
+ },
+ {
+  "name": "베이글",
+  "tags": [
+   "bread",
+   "light"
+  ],
+  "slots": [
+   "breakfast"
+  ]
+ },
+ {
+  "name": "프렌치토스트",
+  "tags": [
+   "bread"
+  ],
+  "slots": [
+   "breakfast"
+  ]
+ },
+ {
+  "name": "누룽지",
+  "tags": [
+   "light",
+   "soup"
+  ],
+  "slots": [
+   "breakfast"
+  ]
+ },
+ {
+  "name": "떡볶이",
+  "tags": [
+   "spicy",
+   "rice"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "마라탕",
+  "tags": [
+   "soup",
+   "spicy"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "훠궈",
+  "tags": [
+   "soup",
+   "spicy",
+   "meat"
+  ],
+  "slots": [
+   "dinner"
+  ]
+ },
+ {
+  "name": "쌀국수 샐러드",
+  "tags": [
+   "light",
+   "cold",
+   "noodle"
+  ],
+  "slots": [
+   "lunch"
+  ]
+ },
+ {
+  "name": "타코",
+  "tags": [
+   "western"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "분짜",
+  "tags": [
+   "noodle",
+   "cold",
+   "light"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "탕수육",
+  "tags": [
+   "fried",
+   "meat"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "딤섬",
+  "tags": [
+   "light"
+  ],
+  "slots": [
+   "lunch",
+   "dinner"
+  ]
+ },
+ {
+  "name": "붕어빵",
+  "tags": [
+   "bread",
+   "hot"
+  ],
+  "slots": [
+   "snack"
+  ]
+ },
+ {
+  "name": "호떡",
+  "tags": [
+   "bread",
+   "hot"
+  ],
+  "slots": [
+   "snack"
+  ]
+ },
+ {
+  "name": "호빵",
+  "tags": [
+   "bread",
+   "hot"
+  ],
+  "slots": [
+   "snack"
+  ]
+ },
+ {
+  "name": "아이스크림",
+  "tags": [
+   "cold"
+  ],
+  "slots": [
+   "snack"
+  ]
+ },
+ {
+  "name": "팥빙수",
+  "tags": [
+   "cold"
+  ],
+  "slots": [
+   "snack"
+  ]
+ },
+ {
+  "name": "과일",
+  "tags": [
+   "light",
+   "cold"
+  ],
+  "slots": [
+   "snack"
+  ]
+ },
+ {
+  "name": "토스트 간식",
+  "tags": [
+   "bread"
+  ],
+  "slots": [
+   "snack"
+  ]
+ },
+ {
+  "name": "떡꼬치",
+  "tags": [
+   "fried"
+  ],
+  "slots": [
+   "snack"
+  ]
+ },
+ {
+  "name": "핫초코와 쿠키",
+  "tags": [
+   "hot",
+   "bread"
+  ],
+  "slots": [
+   "snack"
+  ]
+ },
+ {
+  "name": "요거트",
+  "tags": [
+   "light",
+   "cold"
+  ],
+  "slots": [
+   "snack"
+  ]
+ },
+ {
+  "name": "군고구마",
+  "tags": [
+   "hot"
+  ],
+  "slots": [
+   "snack"
+  ]
+ },
+ {
+  "name": "아이스 아메리카노와 케이크",
+  "tags": [
+   "cold",
+   "bread"
+  ],
+  "slots": [
+   "snack"
+  ]
+ }
+]

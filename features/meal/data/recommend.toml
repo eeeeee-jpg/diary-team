@@ -1,0 +1,48 @@
+# 추천 규칙. 점수 = 시간대 적합도 + 날씨 가중치 - 최근 먹은 메뉴 감점
+
+[slots]
+# 시작 시각(시) 기준, 위에서부터 첫 매칭. 5~10시 아침, 10~15시 점심, 15~17시 간식, 그 외 저녁
+breakfast = [5, 10]
+lunch = [10, 15]
+snack = [15, 17]
+dinner = [17, 29]  # 17시~다음날 5시 (29 = 24 + 5)
+
+[slot_labels]
+breakfast = "아침"
+lunch = "점심"
+snack = "간식"
+dinner = "저녁"
+
+[score]
+slot_match = 3.0       # 메뉴가 해당 끼니에 어울릴 때
+recent_penalty = 4.0   # 최근 recent_days일 안에 먹은 메뉴
+recent_days = 3
+count = 3              # 한 번에 보여줄 추천 수
+
+[weather_thresholds]
+rain_mm = 0.1          # 강수량이 이 이상이면 비/눈
+snow_temp_max = 1.0    # 강수 중 기온이 이 이하면 눈
+cold_feels_like = 0.0  # 체감온도가 이 이하면 한파
+heat_feels_like = 33.0 # 체감온도가 이 이상이면 폭염
+
+# 날씨 조건별 태그 가중치
+[weather_weights.rain]
+soup = 3.0
+noodle = 1.0
+[weather_weights.snow]
+soup = 3.0
+[weather_weights.cold]
+soup = 3.0
+hot = 1.0
+[weather_weights.heat]
+cold = 3.0
+light = 1.0
+soup = -1.0
+
+# 추천 이유 문구. {slot}은 끼니 이름
+[reasons]
+rain = "비 오는 {slot}이라 국물이 어울려요"
+snow = "눈 오는 {slot}이라 따뜻한 국물이 좋아요"
+cold = "추운 {slot}엔 뜨끈한 메뉴가 좋아요"
+heat = "더운 {slot}엔 시원한 메뉴가 좋아요"
+slot = "{slot}에 먹기 좋은 메뉴예요"
